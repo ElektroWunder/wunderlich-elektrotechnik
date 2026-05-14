@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     template: '%s | Wunderlich Elektrotechnik',
   },
   description:
-    'Meisterbetrieb für Elektroinstallation, Klimaanlagen, Wärmepumpen und Photovoltaik im Ennepe-Ruhr-Kreis. 13+ Jahre Erfahrung. Kältemittelzertifiziert (Kat. I). Kostenlose Vor-Ort-Begutachtung.',
+    'Meisterbetrieb für Elektroinstallation, Klimaanlagen, Wärmepumpen und Photovoltaik im Ennepe-Ruhr-Kreis. 13+ Jahre Erfahrung. Kältemittelzertifiziert (Kat. I). Vor-Ort-Besichtigung nach Vereinbarung.',
   keywords: [
     'Elektriker Witten',
     'Klimaanlage Witten',

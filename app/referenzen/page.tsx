@@ -65,7 +65,7 @@ export default function ReferenzenPage() {
 
       <CTA
         headline="Werden Sie mein erster Referenzkunde?"
-        subtext="Kostenlose Vor-Ort-Besichtigung, transparentes Angebot – und anschließend ein sauber ausgeführter Auftrag."
+        subtext="Vor-Ort-Besichtigung, transparentes Angebot – und anschließend ein sauber ausgeführter Auftrag."
         primaryLabel="Anfrage stellen"
       />
     </>

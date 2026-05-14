@@ -95,7 +95,7 @@ export default function PhotovoltaikPage() {
           <p>
             Ich schaue mir Ihre Dachfläche an und schätze ab, welche Anlagenleistung (kWp)
             realistisch umsetzbar ist – auf Basis von Ausrichtung, Neigung und verfügbarer Fläche.
-            Diese Einschätzung ist kostenlos und unverbindlich.
+            Diese Einschätzung erfolgt unverbindlich.
           </p>
 
           <h2>Mit oder ohne Speicher</h2>
@@ -150,7 +150,7 @@ export default function PhotovoltaikPage() {
 
       <CTA
         headline="PV-Anlage anfragen"
-        subtext="Kostenlose Vor-Ort-Einschätzung – ich sage Ihnen ehrlich, was ich umsetzen kann."
+        subtext="Vor-Ort-Einschätzung – ich sage Ihnen ehrlich, was ich umsetzen kann."
       />
     </>
   )

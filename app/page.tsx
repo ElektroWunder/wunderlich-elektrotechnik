@@ -24,7 +24,7 @@ import FAQ from '@/components/FAQ'
 export const metadata: Metadata = {
   title: 'Wunderlich Elektrotechnik – Klima, Kälte, Strom aus einer Hand | Witten',
   description:
-    'Ihr Meisterbetrieb für Klimaanlagen, Wärmepumpen, Elektroinstallation und Photovoltaik im Ennepe-Ruhr-Kreis. 13+ Jahre Erfahrung, kältemittelzertifiziert. Kostenlose Erstberatung.',
+    'Ihr Meisterbetrieb für Klimaanlagen, Wärmepumpen, Elektroinstallation und Photovoltaik im Ennepe-Ruhr-Kreis. 13+ Jahre Erfahrung, kältemittelzertifiziert. Angebot nach Vor-Ort-Besichtigung.',
   openGraph: {
     title: 'Wunderlich Elektrotechnik – Klima, Kälte, Strom aus einer Hand',
     description:
@@ -136,7 +136,7 @@ const faqs = [
   {
     question: 'Wie lange dauert die Installation einer Klimaanlage?',
     answer:
-      'Eine Standard-Splitanlage (ein Innengerät, ein Außengerät) ist in der Regel an einem Tag installiert und in Betrieb. Multisplit-Systeme mit mehreren Räumen oder komplexere Leitungsführungen können 1–2 Tage in Anspruch nehmen. Ich kalkuliere das nach der kostenlosen Vor-Ort-Besichtigung exakt.',
+      'Eine Standard-Splitanlage (ein Innengerät, ein Außengerät) ist in der Regel an einem Tag installiert und in Betrieb. Multisplit-Systeme mit mehreren Räumen oder komplexere Leitungsführungen können 1–2 Tage in Anspruch nehmen. Ich kalkuliere das nach der Vor-Ort-Besichtigung exakt.',
   },
   {
     question: 'Wie hoch ist die staatliche Förderung für Wärmepumpen?',
@@ -156,7 +156,7 @@ const faqs = [
   {
     question: 'Was kostet eine Photovoltaik-Anlage für ein Einfamilienhaus?',
     answer:
-      'Das hängt stark von der Dachfläche, Ausrichtung und dem gewünschten Speicher ab. Als Orientierung: Eine typische Anlage für ein Einfamilienhaus (6–10 kWp) liegt heute ohne Speicher bei ca. 8.000–14.000 €, mit Speicher (5–10 kWh) bei 14.000–22.000 €. Ich erstelle Ihnen nach einer kostenlosen Dachanalyse ein individuelles Angebot mit Wirtschaftlichkeitsberechnung.',
+      'Das hängt stark von der Dachfläche, Ausrichtung und dem gewünschten Speicher ab. Als Orientierung: Eine typische Anlage für ein Einfamilienhaus (6–10 kWp) liegt heute ohne Speicher bei ca. 8.000–14.000 €, mit Speicher (5–10 kWh) bei 14.000–22.000 €. Ich erstelle Ihnen nach einer Dachanalyse vor Ort ein individuelles Angebot mit Wirtschaftlichkeitsberechnung.',
   },
 ]
 
@@ -333,8 +333,8 @@ export default function HomePage() {
       {/* Finaler CTA */}
       <CTA
         headline="Bereit für Ihr nächstes Projekt?"
-        subtext="Ich erstelle Ihnen nach einer kostenlosen Vor-Ort-Besichtigung ein transparentes Festpreisangebot – ohne versteckte Kosten, ohne Überraschungen."
-        primaryLabel="Kostenloses Angebot anfordern"
+        subtext="Ich erstelle Ihnen nach einer Vor-Ort-Besichtigung ein transparentes Festpreisangebot – ohne versteckte Kosten, ohne Überraschungen."
+        primaryLabel="Angebot anfordern"
       />
 
       {/* Mobile Direktanruf */}

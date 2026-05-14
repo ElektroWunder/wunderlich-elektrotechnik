@@ -52,7 +52,7 @@ const faqs = [
   {
     question: 'Wann muss ich die Elektroanlage sanieren?',
     answer:
-      'Anlagen, die älter als 30–40 Jahre sind, entsprechen oft nicht mehr dem aktuellen Stand der Technik. Typische Anzeichen: Schmelzsicherungen statt Leitungsschutzschaltern, kein FI-Schutzschalter, Zwei-Draht-Leitungen ohne Schutzleiter. Ich bewerte Ihre Anlage kostenlos und sage Ihnen, was sinnvoll ist.',
+      'Anlagen, die älter als 30–40 Jahre sind, entsprechen oft nicht mehr dem aktuellen Stand der Technik. Typische Anzeichen: Schmelzsicherungen statt Leitungsschutzschaltern, kein FI-Schutzschalter, Zwei-Draht-Leitungen ohne Schutzleiter. Ich bewerte Ihre Anlage vor Ort und sage Ihnen, was sinnvoll ist.',
   },
   {
     question: 'Installieren Sie auch Smart-Home-Systeme?',
@@ -151,7 +151,7 @@ export default function ElektroinstallationPage() {
 
       <CTA
         headline="Elektroinstallation anfragen"
-        subtext="Ich besichtige kostenlos und erstelle ein schriftliches Festpreisangebot."
+        subtext="Ich besichtige vor Ort und erstelle ein schriftliches Festpreisangebot."
       />
     </>
   )

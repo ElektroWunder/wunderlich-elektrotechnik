@@ -19,7 +19,7 @@ export default function Hero({
   imageUrl,
   imageAlt,
   badge,
-  primaryCta = { label: 'Kostenloses Angebot anfordern', href: '/kontakt' },
+  primaryCta = { label: 'Angebot anfordern', href: '/kontakt' },
   secondaryCta,
   overlay = 'dark',
 }: HeroProps) {

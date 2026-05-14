@@ -17,7 +17,7 @@ import { CheckCircle, MapPin } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Klimaanlage installieren in Witten – Wunderlich Elektrotechnik',
   description:
-    'Klimaanlagen Installation in Witten und Umgebung. Daikin, Mitsubishi, Toshiba – fachgerecht montiert vom zertifizierten Meisterbetrieb. Kostenlose Vor-Ort-Besichtigung.',
+    'Klimaanlagen Installation in Witten und Umgebung. Daikin, Mitsubishi, Toshiba – fachgerecht montiert vom zertifizierten Meisterbetrieb. Vor-Ort-Besichtigung nach Vereinbarung.',
   openGraph: {
     title: 'Klimaanlage in Witten installieren – Wunderlich Elektrotechnik',
     description: 'Ihr lokaler Klimatechnik-Meister in Witten: Split- und Multisplitanlagen, schnelle Montage, faire Preise.',
@@ -38,7 +38,7 @@ const faqs = [
   {
     question: 'Gibt es in Witten Einschränkungen für Klimaanlagen-Außengeräte?',
     answer:
-      'Im historischen Bereich der Wittener Innenstadt und in denkmalgeschützten Gebäuden kann die Aufstellung von Außengeräten eingeschränkt sein. Ich kläre das im Rahmen der kostenlosen Vor-Ort-Besichtigung mit Ihnen ab.',
+      'Im historischen Bereich der Wittener Innenstadt und in denkmalgeschützten Gebäuden kann die Aufstellung von Außengeräten eingeschränkt sein. Ich kläre das im Rahmen der Vor-Ort-Besichtigung mit Ihnen ab.',
   },
 ]
 
@@ -98,7 +98,7 @@ export default function KlimaanlagenWittenPage() {
 
       <CTA
         headline="Klimaanlage in Witten anfragen"
-        subtext="Ich melde mich innerhalb von 24 Stunden und komme zur kostenlosen Vor-Ort-Besichtigung – ohne Verpflichtung."
+        subtext="Ich melde mich innerhalb von 24 Stunden und komme zur Vor-Ort-Besichtigung – ohne Verpflichtung."
       />
     </>
   )

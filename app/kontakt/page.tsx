@@ -3,9 +3,9 @@ import { Phone, MapPin, Clock, AlertTriangle, ExternalLink } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
-  title: 'Kontakt – Kostenlose Beratung anfragen',
+  title: 'Kontakt – Beratung anfragen',
   description:
-    'Kontakt zu Wunderlich Elektrotechnik: Telefon +49 176 84995287, Witten. Kostenlose Beratung und Angebotserstellung für Witten und Umgebung.',
+    'Kontakt zu Wunderlich Elektrotechnik: Telefon +49 176 84995287, Witten. Beratung und Angebotserstellung für Witten und Umgebung.',
 }
 
 export default function KontaktPage() {
@@ -20,7 +20,7 @@ export default function KontaktPage() {
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             Beschreiben Sie Ihr Vorhaben – ich melde mich innerhalb von 24 Stunden.
-            Kostenlose Vor-Ort-Besichtigung und schriftliches Festpreisangebot.
+            Vor-Ort-Besichtigung und schriftliches Festpreisangebot.
           </p>
         </div>
 

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 }
 
 const included = [
-  'Kostenlose Vor-Ort-Besichtigung',
+  'Vor-Ort-Besichtigung',
   'Elektrischer Anschluss der Wärmepumpe nach VDE 0100',
   'Dimensionierung der Zuleitung und Absicherung',
   'Lastabwurf-Relais nach §14a EnWG (Pflicht)',

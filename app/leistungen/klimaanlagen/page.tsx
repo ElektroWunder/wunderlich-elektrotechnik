@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 }
 
 const included = [
-  'Kostenlose Vor-Ort-Besichtigung und Beratung',
+  'Vor-Ort-Besichtigung und Beratung',
   'Fachgerechte Installation von Innen- und Außengerät',
   'Verlegung der Kältemittelleitungen und des Kondensatschlauchs',
   'Elektroanschluss nach VDE 0100',
@@ -29,7 +29,7 @@ const included = [
 const steps = [
   {
     step: '01',
-    title: 'Kostenlose Besichtigung',
+    title: 'Vor-Ort-Besichtigung',
     description:
       'Ich schaue mir Ihren Raum und die Außenwand an, prüfe wo das Außengerät montiert werden kann und wie die Leitungsführung verlaufen soll. Erst dann kann ich Ihnen einen verlässlichen Preis nennen.',
   },
@@ -171,7 +171,7 @@ export default function KlimaanlagenPage() {
 
       <CTA
         headline="Klimaanlage anfragen"
-        subtext="Kostenloses Angebot nach Vor-Ort-Besichtigung. Ich melde mich innerhalb von 24 Stunden."
+        subtext="Angebot nach Vor-Ort-Besichtigung. Ich melde mich innerhalb von 24 Stunden."
         primaryLabel="Jetzt anfragen"
       />
     </>
