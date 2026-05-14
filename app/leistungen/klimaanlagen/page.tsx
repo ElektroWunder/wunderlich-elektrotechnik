@@ -35,9 +35,9 @@ const steps = [
   },
   {
     step: '02',
-    title: 'Festpreisangebot',
+    title: 'Angebot',
     description:
-      'Sie erhalten ein schriftliches Angebot mit Festpreisen – aufgeschlüsselt nach Material und Arbeitszeit. Was drinsteht, gilt.',
+      'Sie erhalten ein schriftliches Angebot – aufgeschlüsselt nach Material und Arbeitszeit. Was drinsteht, gilt.',
   },
   {
     step: '03',
@@ -77,7 +77,7 @@ const faqs = [
   {
     question: 'Was kostet eine Splitklimaanlage inklusive Montage?',
     answer:
-      'Das hängt vom Gerät, der Leitungslänge und dem Montageaufwand ab. Als Orientierung: eine einfache Splitanlage (Wohnzimmer, 20–35 m²) liegt inklusive Montage typischerweise zwischen 1.500 € und 2.800 €. Nach der Besichtigung nenne ich Ihnen einen genauen Festpreis.',
+      'Das hängt vom Gerät, der Leitungslänge und dem Montageaufwand ab. Als Orientierung: eine einfache Splitanlage (Wohnzimmer, 20–35 m²) liegt inklusive Montage typischerweise zwischen 1.500 € und 2.800 €. Nach der Besichtigung nenne ich Ihnen einen genauen Preis.',
   },
 ]
 

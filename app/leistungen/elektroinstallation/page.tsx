@@ -151,7 +151,7 @@ export default function ElektroinstallationPage() {
 
       <CTA
         headline="Elektroinstallation anfragen"
-        subtext="Ich besichtige vor Ort und erstelle ein schriftliches Festpreisangebot."
+        subtext="Ich besichtige vor Ort und erstelle ein schriftliches Angebot."
       />
     </>
   )

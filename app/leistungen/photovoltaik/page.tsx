@@ -33,7 +33,7 @@ const steps = [
     step: '02',
     title: 'Angebot und Komponentenwahl',
     description:
-      'Sie erhalten ein Festpreisangebot für die elektrische Installation. Ich empfehle Ihnen Modultypen und Wechselrichter – die endgültige Wahl liegt bei Ihnen.',
+      'Sie erhalten ein Angebot für die elektrische Installation. Ich empfehle Ihnen Modultypen und Wechselrichter – die endgültige Wahl liegt bei Ihnen.',
   },
   {
     step: '03',

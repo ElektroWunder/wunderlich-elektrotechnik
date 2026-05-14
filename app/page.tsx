@@ -214,7 +214,7 @@ export default function HomePage() {
       {/* Finaler CTA */}
       <CTA
         headline="Bereit für Ihr nächstes Projekt?"
-        subtext="Ich erstelle Ihnen nach einer Vor-Ort-Besichtigung ein transparentes Festpreisangebot – ohne versteckte Kosten, ohne Überraschungen."
+        subtext="Ich erstelle Ihnen nach einer Vor-Ort-Besichtigung ein transparentes Angebot – ohne versteckte Kosten, ohne Überraschungen."
         primaryLabel="Angebot anfordern"
       />
 

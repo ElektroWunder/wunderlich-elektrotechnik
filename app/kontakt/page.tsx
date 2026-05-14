@@ -20,7 +20,7 @@ export default function KontaktPage() {
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             Beschreiben Sie Ihr Vorhaben – ich melde mich innerhalb von 24 Stunden.
-            Vor-Ort-Besichtigung und schriftliches Festpreisangebot.
+            Vor-Ort-Besichtigung und schriftliches Angebot.
           </p>
         </div>
 
