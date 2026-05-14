@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
   AirVent,
@@ -340,10 +340,10 @@ export default function HomePage() {
       {/* Mobile Direktanruf */}
       <div className="bg-white py-8 text-center md:hidden">
         <a
-          href="tel:+4917684995287"
+          href="tel:+49XXXXXXXXXX"
           className="inline-flex items-center gap-2 text-primary font-semibold"
         >
-          <Phone className="w-4 h-4 text-accent" /> +49 176 84995287
+          <Phone className="w-4 h-4 text-accent" /> +49 XXX XXXXXXXX
         </a>
       </div>
     </>

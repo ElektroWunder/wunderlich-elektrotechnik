@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Datenschutzerklärung',
@@ -52,7 +52,7 @@ export default function DatenschutzPage() {
               Sebastian Wunderlich<br />
               Casinostraße 2<br />
               58452 Witten<br />
-              Telefon: +49 176 84995287
+              Telefon: +49 XXX XXXXXXXX
             </p>
             <h3>Speicherdauer</h3>
             <p>

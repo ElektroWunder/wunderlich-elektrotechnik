@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
@@ -92,11 +92,11 @@ export default function Header() {
 
           {/* Phone CTA – Desktop */}
           <a
-            href="tel:+4917684995287"
+            href="tel:+49XXXXXXXXXX"
             className="hidden md:flex items-center gap-2 bg-accent hover:bg-accent-dark text-white px-4 py-2.5 rounded-lg font-semibold text-sm transition-colors duration-200"
           >
             <Phone className="w-4 h-4" />
-            <span>+49 176 84995287</span>
+            <span>+49 XXX XXXXXXXX</span>
           </a>
 
           {/* Hamburger – Mobile */}
@@ -126,11 +126,11 @@ export default function Header() {
             ))}
             <div className="pt-4">
               <a
-                href="tel:+4917684995287"
+                href="tel:+49XXXXXXXXXX"
                 className="flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white px-4 py-3 rounded-lg font-semibold text-base w-full transition-colors"
               >
                 <Phone className="w-5 h-5" />
-                <span>+49 176 84995287</span>
+                <span>+49 XXX XXXXXXXX</span>
               </a>
             </div>
           </div>

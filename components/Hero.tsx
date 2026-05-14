@@ -1,4 +1,4 @@
-import Image from 'next/image'
+﻿import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight, Phone } from 'lucide-react'
 
@@ -80,7 +80,7 @@ export default function Hero({
               </Link>
             ) : (
               <a
-                href="tel:+4917684995287"
+                href="tel:+49XXXXXXXXXX"
                 className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 px-6 py-3.5 rounded-lg font-semibold text-base transition-all duration-200 backdrop-blur-sm"
               >
                 <Phone className="w-4 h-4" />

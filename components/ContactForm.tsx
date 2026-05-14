@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
@@ -209,8 +209,8 @@ export default function ContactForm() {
             <p className="font-semibold text-red-800">Fehler beim Senden</p>
             <p className="text-sm text-red-700 mt-1">
               Bitte versuchen Sie es erneut oder rufen Sie direkt an:{' '}
-              <a href="tel:+4917684995287" className="underline">
-                +49 176 84995287
+              <a href="tel:+49XXXXXXXXXX" className="underline">
+                +49 XXX XXXXXXXX
               </a>
             </p>
           </div>

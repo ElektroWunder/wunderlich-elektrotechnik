@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { AlertCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ export default function AgbPage() {
             <strong>Wunderlich Elektrotechnik</strong><br />
             Sebastian Wunderlich<br />
             Casinostraße 2 · 58452 Witten<br />
-            Telefon: <a href="tel:+4917684995287" className="text-accent">+49 176 84995287</a>
+            Telefon: <a href="tel:+49XXXXXXXXXX" className="text-accent">+49 XXX XXXXXXXX</a>
           </p>
         </div>
       </div>

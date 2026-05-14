@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Clock, Phone, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import Hero from '@/components/Hero'
@@ -46,11 +46,11 @@ export default function ReferenzenPage() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+4917684995287"
+              href="tel:+49XXXXXXXXXX"
               className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white px-6 py-3.5 rounded-lg font-semibold transition-colors"
             >
               <Phone className="w-4 h-4" />
-              +49 176 84995287
+              +49 XXX XXXXXXXX
             </a>
             <Link
               href="/kontakt"

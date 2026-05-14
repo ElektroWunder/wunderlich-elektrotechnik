@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { ArrowRight, Phone } from 'lucide-react'
 
 interface CTAProps {
@@ -33,11 +33,11 @@ export default function CTA({
 
           {showPhone && (
             <a
-              href="tel:+4917684995287"
+              href="tel:+49XXXXXXXXXX"
               className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-lg font-bold text-base transition-all duration-200"
             >
               <Phone className="w-4 h-4" />
-              +49 176 84995287
+              +49 XXX XXXXXXXX
             </a>
           )}
         </div>

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Impressum',
@@ -28,7 +28,7 @@ export default function ImpressumPage() {
           <section>
             <h2>Kontakt</h2>
             <p>
-              Telefon: <a href="tel:+4917684995287" className="text-accent">+49 176 84995287</a><br />
+              Telefon: <a href="tel:+49XXXXXXXXXX" className="text-accent">+49 XXX XXXXXXXX</a><br />
               E-Mail: <span className="text-gray-500 italic">[E-Mail-Adresse wird nach Einrichtung ergänzt]</span>
             </p>
           </section>

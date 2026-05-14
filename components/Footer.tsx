@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import { Phone, Mail, MapPin } from 'lucide-react'
 
 const leistungen = [
@@ -47,8 +47,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 shrink-0 text-accent" />
-                <a href="tel:+4917684995287" className="hover:text-white transition-colors">
-                  +49 176 84995287
+                <a href="tel:+49XXXXXXXXXX" className="hover:text-white transition-colors">
+                  +49 XXX XXXXXXXX
                 </a>
               </div>
               <div className="flex items-center gap-2">

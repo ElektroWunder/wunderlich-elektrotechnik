@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
@@ -50,7 +50,7 @@ const jsonLd = {
   description:
     'Meisterbetrieb für Elektroinstallation, Klimaanlagen, Wärmepumpen und Photovoltaik im Ennepe-Ruhr-Kreis.',
   url: 'https://wunderlich-elektrotechnik.de',
-  telephone: '+4917684995287',
+  telephone: '+49XXXXXXXXXX',
   priceRange: '€€',
   address: {
     '@type': 'PostalAddress',

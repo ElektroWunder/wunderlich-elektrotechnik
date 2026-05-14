@@ -1,11 +1,11 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Phone, MapPin, Clock, AlertTriangle, ExternalLink } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Kontakt – Beratung anfragen',
   description:
-    'Kontakt zu Wunderlich Elektrotechnik: Telefon +49 176 84995287, Witten. Beratung und Angebotserstellung für Witten und Umgebung.',
+    'Kontakt zu Wunderlich Elektrotechnik: Telefon +49 XXX XXXXXXXX, Witten. Beratung und Angebotserstellung für Witten und Umgebung.',
 }
 
 export default function KontaktPage() {
@@ -46,10 +46,10 @@ export default function KontaktPage() {
                   <div>
                     <p className="text-sm font-semibold text-gray-500 mb-0.5">Telefon</p>
                     <a
-                      href="tel:+4917684995287"
+                      href="tel:+49XXXXXXXXXX"
                       className="text-primary font-bold text-lg hover:text-accent transition-colors"
                     >
-                      +49 176 84995287
+                      +49 XXX XXXXXXXX
                     </a>
                     <p className="text-xs text-gray-400 mt-0.5">
                       Erreichbarkeit nach Vereinbarung
