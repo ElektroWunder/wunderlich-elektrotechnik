@@ -10,11 +10,6 @@ const leistungen = [
   { href: '/leistungen/wartung', label: 'Wartung & E-Check' },
 ]
 
-const servicegebiet = [
-  'Witten', 'Wetter', 'Sprockhövel', 'Hattingen',
-  'Gevelsberg', 'Ennepetal', 'Schwelm', 'Herdecke', 'Hagen',
-  'Dortmund', 'Bochum',
-]
 
 export default function Footer() {
   return (
@@ -74,21 +69,11 @@ export default function Footer() {
           {/* Servicegebiet */}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4">
-              Servicegebiet
+              Einsatzgebiet
             </h3>
-            <p className="text-sm text-gray-400 mb-3">
-              Witten und Umgebung:
+            <p className="text-sm text-gray-400 leading-relaxed">
+              Schwerpunkt Witten – der genaue Einsatzbereich richtet sich nach Auftrag. Sprechen Sie mich einfach an.
             </p>
-            <div className="flex flex-wrap gap-1.5">
-              {servicegebiet.map((ort) => (
-                <span
-                  key={ort}
-                  className="text-xs bg-primary-light px-2 py-1 rounded text-gray-300"
-                >
-                  {ort}
-                </span>
-              ))}
-            </div>
           </div>
 
           {/* Links & Öffnungszeiten */}

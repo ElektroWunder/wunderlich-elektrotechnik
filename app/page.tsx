@@ -118,9 +118,9 @@ const faqs = [
       'Über das BAFA-Programm (Bundesförderung für effiziente Gebäude) sind derzeit bis zu 70 % der förderfähigen Kosten möglich – abhängig von Einkommenssituation, Gebäudezustand und ob Sie eine fossile Heizung ersetzen. Die Beantragung läuft digital, ich begleite Sie dabei und erstelle die notwendige Fachunternehmererklärung.',
   },
   {
-    question: 'Fahren Sie auch nach Hagen oder Bochum?',
+    question: 'Wie weit fahren Sie für Aufträge?',
     answer:
-      'Mein Schwerpunkt liegt in Witten und Umgebung. Ich bin aber auch in Hagen, Dortmund und Bochum tätig. Sprechen Sie mich einfach an – ich sage Ihnen direkt, ob und wann ich kommen kann.',
+      'Mein Schwerpunkt liegt in Witten und der näheren Umgebung. Der genaue Einsatzbereich richtet sich nach dem Auftrag – sprechen Sie mich einfach an, ich sage Ihnen direkt, ob und wann ich kommen kann.',
   },
   {
     question: 'Erledigen Sie auch kleinere Elektroarbeiten?',
@@ -142,7 +142,7 @@ export default function HomePage() {
         headline={
           'Klima, Kälte, Strom –\naus einer Hand'
         }
-        subheadline="Ihr Elektro- und Kältetechnikmeister für den Ennepe-Ruhr-Kreis und Hagen. 13+ Jahre Erfahrung, zertifiziert nach EU 517/2014."
+        subheadline="Ihr Elektro- und Kältetechnikmeister aus Witten. 13+ Jahre Erfahrung, zertifiziert nach EU 517/2014."
         imageUrl="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1920&q=80"
         imageAlt="Elektriker bei der Arbeit – Wunderlich Elektrotechnik"
         badge="Meisterbetrieb · HWK Dortmund · Kältemittelzertifiziert"
