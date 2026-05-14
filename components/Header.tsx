@@ -19,7 +19,7 @@ function Logo({ scrolled }: { scrolled: boolean }) {
       {/* Wrapper crops the bottom text portion of the logo image */}
       <div className={cn(
         'relative border-2 border-accent/50 rounded-xl overflow-hidden hover:border-accent transition-all duration-300',
-        scrolled ? 'w-10 h-6 sm:w-12 sm:h-7' : 'w-20 h-12 sm:w-24 sm:h-14'
+        scrolled ? 'w-16 h-10 sm:w-20 sm:h-12' : 'w-28 h-16 sm:w-36 sm:h-20'
       )}>
         <Image
           src="/logo.png"
