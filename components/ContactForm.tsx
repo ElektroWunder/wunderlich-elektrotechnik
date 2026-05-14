@@ -49,10 +49,17 @@ export default function ContactForm() {
 
   const onSubmit = async (data: FormData) => {
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT!, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          phone: data.phone || '',
+          subject: data.subject,
+          message: data.message,
+          _gotcha: data.honeypot,
+        }),
       })
 
       if (!res.ok) throw new Error('Fehler beim Senden')
