@@ -18,7 +18,7 @@ function Logo({ scrolled }: { scrolled: boolean }) {
     <Link href="/" className="flex items-center group">
       {/* Wrapper crops the bottom text portion of the logo image */}
       <div className={cn(
-        'relative border-2 border-accent/50 rounded-xl overflow-hidden hover:border-accent transition-all duration-300',
+        'relative transition-all duration-300',
         scrolled ? 'w-16 h-10 sm:w-20 sm:h-12' : 'w-28 h-16 sm:w-36 sm:h-20'
       )}>
         <Image
