@@ -25,7 +25,8 @@ function Logo({ scrolled }: { scrolled: boolean }) {
           src="/logo.png"
           alt="Wunderlich Elektrotechnik Logo"
           fill
-          className="object-cover object-top"
+          className="object-cover"
+          style={{ objectPosition: 'center 15%' }}
           priority
           onError={(e) => {
             ;(e.target as HTMLImageElement).parentElement!.style.display = 'none'
