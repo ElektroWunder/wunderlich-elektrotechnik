@@ -35,6 +35,14 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     siteName: 'Wunderlich Elektrotechnik',
+    images: [
+      {
+        url: '/logo.png',
+        width: 500,
+        height: 500,
+        alt: 'Wunderlich Elektrotechnik – Klima, Kälte, Strom aus einer Hand',
+      },
+    ],
   },
   robots: {
     index: true,
