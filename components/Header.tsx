@@ -22,9 +22,9 @@ function Logo() {
         <Image
           src="/logo.png"
           alt="Wunderlich Elektrotechnik Logo"
-          height={108}
-          width={108}
-          className="h-[108px] w-[108px] object-contain"
+          height={56}
+          width={56}
+          className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
           priority
           onError={(e) => {
             ;(e.target as HTMLImageElement).parentElement!.style.display = 'none'
@@ -71,7 +71,7 @@ export default function Header() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-36">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           <Logo />
 
           {/* Desktop Navigation */}
