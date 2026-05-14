@@ -33,3 +33,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./out/
           server-dir: /wunderlich-elektrotechnik.de/httpdocs/
+          protocol: ftps
+          port: 21
