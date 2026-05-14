@@ -13,18 +13,19 @@ const navLinks = [
   { href: '/kontakt', label: 'Kontakt' },
 ]
 
-// Logo-Komponente: nutzt /public/logo.png wenn vorhanden, sonst Textlogo
-function Logo() {
+function Logo({ scrolled }: { scrolled: boolean }) {
   return (
     <Link href="/" className="flex items-center group">
-      {/* Echtes Logo-Bild – liegt unter public/logo.png */}
-      <div className="relative border-2 border-accent/50 rounded-xl p-1 hover:border-accent transition-colors">
+      <div className="relative border-2 border-accent/50 rounded-xl p-1 hover:border-accent transition-all duration-300">
         <Image
           src="/logo.png"
           alt="Wunderlich Elektrotechnik Logo"
-          height={56}
-          width={56}
-          className="h-12 w-12 sm:h-14 sm:w-14 object-contain"
+          height={96}
+          width={96}
+          className={cn(
+            'object-contain transition-all duration-300',
+            scrolled ? 'h-10 w-10 sm:h-12 sm:w-12' : 'h-20 w-20 sm:h-24 sm:w-24'
+          )}
           priority
           onError={(e) => {
             ;(e.target as HTMLImageElement).parentElement!.style.display = 'none'
@@ -33,7 +34,6 @@ function Logo() {
           }}
         />
       </div>
-      {/* Textlogo als Fallback (solange logo.png fehlt) */}
       <div id="logo-fallback" className="items-center gap-2.5" style={{ display: 'none' }}>
         <div className="flex items-center justify-center w-9 h-9 bg-primary rounded-lg">
           <span className="text-white font-black text-base leading-none">
@@ -71,8 +71,11 @@ export default function Header() {
       )}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
-          <Logo />
+        <div className={cn(
+          'flex items-center justify-between transition-all duration-300',
+          scrolled ? 'h-14 sm:h-16' : 'h-28 sm:h-32'
+        )}>
+          <Logo scrolled={scrolled} />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
