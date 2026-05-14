@@ -1,5 +1,5 @@
 ﻿import Link from 'next/link'
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
 
 const leistungen = [
   { href: '/leistungen/klimaanlagen', label: 'Klimaanlagen' },
@@ -36,7 +36,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Klima, Kälte, Strom – aus einer Hand.
+              Klima, Kälte, Strom – aus einer Hand
               Meisterbetrieb für Elektro- und Kältetechnik
               im Ennepe-Ruhr-Kreis.
             </p>
@@ -44,12 +44,6 @@ export default function Footer() {
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-accent" />
                 <span>Casinostraße 2<br />58452 Witten</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4 shrink-0 text-accent" />
-                <a href="tel:+49XXXXXXXXXX" className="hover:text-white transition-colors">
-                  +49 XXX XXXXXXXX
-                </a>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 shrink-0 text-accent" />

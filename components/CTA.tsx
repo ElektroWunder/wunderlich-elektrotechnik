@@ -1,20 +1,18 @@
 ﻿import Link from 'next/link'
-import { ArrowRight, Phone } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
 
 interface CTAProps {
   headline?: string
   subtext?: string
   primaryLabel?: string
   primaryHref?: string
-  showPhone?: boolean
 }
 
 export default function CTA({
   headline = 'Bereit für Ihr Projekt?',
-  subtext = 'Ich berate Sie unverbindlich – persönlich, per Telefon oder per E-Mail. Transparente Preise, keine versteckten Kosten.',
+  subtext = 'Ich berate Sie unverbindlich – per Kontaktformular oder E-Mail. Transparente Preise, keine versteckten Kosten.',
   primaryLabel = 'Angebot anfordern',
   primaryHref = '/kontakt',
-  showPhone = true,
 }: CTAProps) {
   return (
     <section className="bg-primary py-20">
@@ -30,16 +28,6 @@ export default function CTA({
             {primaryLabel}
             <ArrowRight className="w-4 h-4" />
           </Link>
-
-          {showPhone && (
-            <a
-              href="tel:+49XXXXXXXXXX"
-              className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-lg font-bold text-base transition-all duration-200"
-            >
-              <Phone className="w-4 h-4" />
-              +49 XXX XXXXXXXX
-            </a>
-          )}
         </div>
       </div>
     </section>

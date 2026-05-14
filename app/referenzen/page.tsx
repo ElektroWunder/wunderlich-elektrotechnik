@@ -1,5 +1,5 @@
 ﻿import type { Metadata } from 'next'
-import { Clock, Phone, ArrowRight } from 'lucide-react'
+import { Clock, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import Hero from '@/components/Hero'
 import CTA from '@/components/CTA'
@@ -40,23 +40,15 @@ export default function ReferenzenPage() {
           </p>
 
           <p className="text-gray-500 leading-relaxed mb-10">
-            Wenn Sie Fragen zur Qualität meiner Arbeit haben: Ich stehe persönlich Rede und Antwort.
-            Rufen Sie mich einfach an.
+            Wenn Sie Fragen zur Qualität meiner Arbeit haben: Schreiben Sie mir einfach.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="tel:+49XXXXXXXXXX"
-              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white px-6 py-3.5 rounded-lg font-semibold transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              +49 XXX XXXXXXXX
-            </a>
             <Link
               href="/kontakt"
-              className="inline-flex items-center justify-center gap-2 border border-primary/20 text-primary hover:bg-gray-50 px-6 py-3.5 rounded-lg font-semibold transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white px-6 py-3.5 rounded-lg font-semibold transition-colors"
             >
-              Kontaktformular
+              Angebot anfragen
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

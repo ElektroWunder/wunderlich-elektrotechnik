@@ -12,9 +12,7 @@ import {
   ShieldCheck,
   User,
   CheckCircle,
-  Star,
   ArrowRight,
-  Phone,
 } from 'lucide-react'
 import Hero from '@/components/Hero'
 import ServiceCard from '@/components/ServiceCard'
@@ -108,30 +106,6 @@ const usps = [
   },
 ]
 
-const references = [
-  {
-    title: 'Split-Klimaanlage im Einfamilienhaus',
-    location: 'Privatkunde in Witten',
-    tech: 'Daikin Emura 5 kW, Wandgerät',
-    description:
-      'Installation einer Inverter-Splitanlage im Wohnzimmer mit verdeckter Leitungsführung. Inklusive Inbetriebnahme und Einweisung.',
-  },
-  {
-    title: 'Luft-Wasser-Wärmepumpe',
-    location: 'Privatkunde in Hattingen',
-    tech: 'Mitsubishi Zubadan, 8 kW, hydraulischer Abgleich',
-    description:
-      'Kompletttausch von Gas auf Wärmepumpe. Planung, Rohrleitungsarbeiten, Elektroanbindung und BAFA-Dokumentation.',
-  },
-  {
-    title: 'Elektro-Sanierung + Wallbox',
-    location: 'Gewerbebetrieb in Gevelsberg',
-    tech: 'Unterverteilung, FI/LS-Schutz, 22-kW-Ladestation',
-    description:
-      'Vollständige Sanierung der Elektroanlage mit neuer Unterverteilung und Installation einer gewerblichen Ladestation mit eichrechtskonformer Abrechnung.',
-  },
-]
-
 const faqs = [
   {
     question: 'Wie lange dauert die Installation einer Klimaanlage?',
@@ -166,7 +140,7 @@ export default function HomePage() {
       {/* Hero */}
       <Hero
         headline={
-          'Klima, Kälte, Strom –\naus einer Hand.'
+          'Klima, Kälte, Strom –\naus einer Hand'
         }
         subheadline="Ihr Elektro- und Kältetechnikmeister für den Ennepe-Ruhr-Kreis und Hagen. 13+ Jahre Erfahrung, zertifiziert nach EU 517/2014."
         imageUrl="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1920&q=80"
@@ -234,99 +208,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Referenzen */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-primary mb-4">
-              Ausgewählte Projekte
-            </h2>
-            <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-              Ein kleiner Einblick in abgeschlossene Projekte aus dem Ennepe-Ruhr-Kreis.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {references.map((ref) => (
-              <div
-                key={ref.title}
-                className="bg-white rounded-xl border border-gray-100 overflow-hidden hover:border-accent/20 hover:shadow-lg transition-all duration-300"
-              >
-                <div className="bg-gradient-to-br from-primary to-primary-light h-32 flex items-center justify-center">
-                  <Zap className="w-12 h-12 text-accent opacity-60" />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-1.5 text-xs text-gray-400 mb-2">
-                    <CheckCircle className="w-3.5 h-3.5 text-green-500" />
-                    <span>{ref.location}</span>
-                  </div>
-                  <h3 className="font-bold text-primary mb-2">{ref.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed mb-3">{ref.description}</p>
-                  <div className="text-xs font-medium text-accent bg-accent/5 px-3 py-1.5 rounded-full inline-block">
-                    {ref.tech}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Link
-              href="/referenzen"
-              className="inline-flex items-center gap-2 text-accent font-semibold hover:text-accent-dark transition-colors"
-            >
-              Alle Referenzen ansehen <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Bewertungs-Sektion */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-primary mb-2">Kundenstimmen</h2>
-            <p className="text-gray-500">Was Kunden über meine Arbeit sagen.</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                name: 'Familie Becker, Witten',
-                text: 'Die Klimaanlage wurde exakt wie besprochen installiert, sauber und ohne Überraschungen bei der Rechnung. Sehr empfehlenswert.',
-                stars: 5,
-              },
-              {
-                name: 'Thomas H., Hattingen',
-                text: 'Tolle Beratung zur Wärmepumpe, alle Förderthemen wurden erklärt. Die Anlage läuft super und ich bin rundum zufrieden.',
-                stars: 5,
-              },
-              {
-                name: 'Autohaus Neumann, Gevelsberg',
-                text: 'E-Check und Wallbox-Installation für unseren Betrieb – alles professionell abgewickelt, Dokumentation vollständig. Klare Weiterempfehlung.',
-                stars: 5,
-              },
-            ].map((review) => (
-              <div key={review.name} className="bg-gray-50 rounded-xl p-6 border border-gray-100">
-                <div className="flex gap-1 mb-3">
-                  {Array.from({ length: review.stars }).map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-accent text-accent" />
-                  ))}
-                </div>
-                <p className="text-gray-600 text-sm leading-relaxed mb-4 italic">
-                  &ldquo;{review.text}&rdquo;
-                </p>
-                <p className="text-primary font-semibold text-sm">{review.name}</p>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-center text-xs text-gray-400 mt-8">
-            Bewertungen werden nach Fertigstellung der Google-Business-Seite direkt eingebunden.
-          </p>
-        </div>
-      </section>
-
       {/* FAQ */}
       <FAQ items={faqs} title="Häufige Fragen" />
 
@@ -337,15 +218,6 @@ export default function HomePage() {
         primaryLabel="Angebot anfordern"
       />
 
-      {/* Mobile Direktanruf */}
-      <div className="bg-white py-8 text-center md:hidden">
-        <a
-          href="tel:+49XXXXXXXXXX"
-          className="inline-flex items-center gap-2 text-primary font-semibold"
-        >
-          <Phone className="w-4 h-4 text-accent" /> +49 XXX XXXXXXXX
-        </a>
-      </div>
     </>
   )
 }

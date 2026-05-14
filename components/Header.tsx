@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Phone, Menu, X } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navLinks = [
@@ -25,8 +25,7 @@ function Logo({ scrolled }: { scrolled: boolean }) {
           src="/logo.png"
           alt="Wunderlich Elektrotechnik Logo"
           fill
-          className="object-cover"
-          style={{ objectPosition: 'center 15%' }}
+          className="object-contain"
           priority
           onError={(e) => {
             ;(e.target as HTMLImageElement).parentElement!.style.display = 'none'
@@ -91,13 +90,12 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Phone CTA – Desktop */}
+          {/* Angebot CTA – Desktop */}
           <a
-            href="tel:+49XXXXXXXXXX"
+            href="/kontakt"
             className="hidden md:flex items-center gap-2 bg-accent hover:bg-accent-dark text-white px-4 py-2.5 rounded-lg font-semibold text-sm transition-colors duration-200"
           >
-            <Phone className="w-4 h-4" />
-            <span>+49 XXX XXXXXXXX</span>
+            Angebot anfragen
           </a>
 
           {/* Hamburger – Mobile */}
@@ -127,11 +125,10 @@ export default function Header() {
             ))}
             <div className="pt-4">
               <a
-                href="tel:+49XXXXXXXXXX"
+                href="/kontakt"
                 className="flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white px-4 py-3 rounded-lg font-semibold text-base w-full transition-colors"
               >
-                <Phone className="w-5 h-5" />
-                <span>+49 XXX XXXXXXXX</span>
+                Angebot anfragen
               </a>
             </div>
           </div>

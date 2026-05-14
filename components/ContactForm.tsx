@@ -208,10 +208,7 @@ export default function ContactForm() {
           <div>
             <p className="font-semibold text-red-800">Fehler beim Senden</p>
             <p className="text-sm text-red-700 mt-1">
-              Bitte versuchen Sie es erneut oder rufen Sie direkt an:{' '}
-              <a href="tel:+49XXXXXXXXXX" className="underline">
-                +49 XXX XXXXXXXX
-              </a>
+              Bitte versuchen Sie es erneut oder senden Sie eine E-Mail.
             </p>
           </div>
         </div>
