@@ -16,16 +16,16 @@ const navLinks = [
 function Logo({ scrolled }: { scrolled: boolean }) {
   return (
     <Link href="/" className="flex items-center group">
-      <div className="relative border-2 border-accent/50 rounded-xl p-1 hover:border-accent transition-all duration-300">
+      {/* Wrapper crops the bottom text portion of the logo image */}
+      <div className={cn(
+        'relative border-2 border-accent/50 rounded-xl overflow-hidden hover:border-accent transition-all duration-300',
+        scrolled ? 'w-10 h-6 sm:w-12 sm:h-7' : 'w-20 h-12 sm:w-24 sm:h-14'
+      )}>
         <Image
           src="/logo.png"
           alt="Wunderlich Elektrotechnik Logo"
-          height={96}
-          width={96}
-          className={cn(
-            'object-contain transition-all duration-300',
-            scrolled ? 'h-10 w-10 sm:h-12 sm:w-12' : 'h-20 w-20 sm:h-24 sm:w-24'
-          )}
+          fill
+          className="object-cover object-top"
           priority
           onError={(e) => {
             ;(e.target as HTMLImageElement).parentElement!.style.display = 'none'
