@@ -109,8 +109,7 @@ export default function KontaktPage() {
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
               <h2 className="text-lg font-bold text-primary mb-3">Servicegebiet</h2>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Schwerpunkt: <strong>Witten und näherer Umkreis.</strong> Für größere Aufträge
-                bin ich auch im Ennepe-Ruhr-Kreis und in Hagen unterwegs – fragen Sie gerne an.
+                Schwerpunkt Witten – der genaue Einsatzbereich richtet sich nach dem Auftrag. Sprechen Sie mich einfach an.
               </p>
             </div>
 
