@@ -112,6 +112,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="de" className={inter.variable}>
       <head>
+        <meta property="og:image" content="https://wunderlich-elektrotechnik.de/logo-text.png" />
+        <meta property="og:image:width" content="601" />
+        <meta property="og:image:height" content="599" />
+        <meta name="twitter:image" content="https://wunderlich-elektrotechnik.de/logo-text.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
