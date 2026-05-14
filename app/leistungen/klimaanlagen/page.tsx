@@ -98,10 +98,10 @@ export default function KlimaanlagenPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose-content">
           <h2>Was ich tue – und was nicht</h2>
           <p>
-            Ich installiere, warte und repariere <strong>Splitklimaanlagen</strong>. Das ist mein Ding,
+            Ich installiere, warte und repariere <strong>Split- und Multisplitanlagen</strong>. Das ist mein Ding,
             das mache ich sauber und zuverlässig. Was ich nicht anbiete: komplexe Auslegungsberechnungen
-            für Großobjekte oder Mehrzonensysteme. Wenn Sie eine Splitanlage für ein Zimmer, ein Büro
-            oder eine kleine Gewerbeeinheit brauchen – dann bin ich der Richtige.
+            für Großobjekte mit vielen Zonen. Wenn Sie eine Klimaanlage für ein Zimmer, mehrere Räume,
+            ein Büro oder eine kleine Gewerbeeinheit brauchen – dann bin ich der Richtige.
           </p>
           <p>
             Als Kältetechniker mit <strong>Kältemittelschein Kategorie I</strong> nach EU 517/2014
