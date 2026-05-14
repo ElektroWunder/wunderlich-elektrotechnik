@@ -1,0 +1,138 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { Phone, Menu, X } from 'lucide-react'
+import { cn } from '@/lib/utils'
+
+const navLinks = [
+  { href: '/leistungen', label: 'Leistungen' },
+  { href: '/ueber-mich', label: 'Über mich' },
+  { href: '/referenzen', label: 'Referenzen' },
+  { href: '/kontakt', label: 'Kontakt' },
+]
+
+// Logo-Komponente: nutzt /public/logo.png wenn vorhanden, sonst Textlogo
+function Logo() {
+  return (
+    <Link href="/" className="flex items-center group">
+      {/* Echtes Logo-Bild – liegt unter public/logo.png */}
+      <div className="relative border-2 border-accent/50 rounded-xl p-1 hover:border-accent transition-colors">
+        <Image
+          src="/logo.png"
+          alt="Wunderlich Elektrotechnik Logo"
+          height={108}
+          width={108}
+          className="h-[108px] w-[108px] object-contain"
+          priority
+          onError={(e) => {
+            ;(e.target as HTMLImageElement).parentElement!.style.display = 'none'
+            const fallback = document.getElementById('logo-fallback')
+            if (fallback) fallback.style.display = 'flex'
+          }}
+        />
+      </div>
+      {/* Textlogo als Fallback (solange logo.png fehlt) */}
+      <div id="logo-fallback" className="items-center gap-2.5" style={{ display: 'none' }}>
+        <div className="flex items-center justify-center w-9 h-9 bg-primary rounded-lg">
+          <span className="text-white font-black text-base leading-none">
+            W<span className="text-accent">E</span>
+          </span>
+        </div>
+        <div className="leading-tight">
+          <span className="block text-sm font-black text-primary tracking-tight uppercase">
+            Wunderlich
+          </span>
+          <span className="block text-[10px] text-accent font-semibold tracking-widest uppercase">
+            Elektrotechnik
+          </span>
+        </div>
+      </div>
+    </Link>
+  )
+}
+
+export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 10)
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  return (
+    <header
+      className={cn(
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
+        scrolled ? 'bg-white shadow-md' : 'bg-white/95 backdrop-blur-sm'
+      )}
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-36">
+          <Logo />
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="text-sm font-medium text-gray-600 hover:text-primary transition-colors duration-200"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Phone CTA – Desktop */}
+          <a
+            href="tel:+4917684995287"
+            className="hidden md:flex items-center gap-2 bg-accent hover:bg-accent-dark text-white px-4 py-2.5 rounded-lg font-semibold text-sm transition-colors duration-200"
+          >
+            <Phone className="w-4 h-4" />
+            <span>+49 176 84995287</span>
+          </a>
+
+          {/* Hamburger – Mobile */}
+          <button
+            className="md:hidden p-2 rounded-md text-primary"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label="Menü öffnen"
+          >
+            {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <div className="md:hidden bg-white border-t border-gray-100 animate-fade-in">
+          <div className="px-4 pt-4 pb-6 space-y-1">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="block px-3 py-3 text-base font-medium text-gray-700 hover:text-accent hover:bg-gray-50 rounded-md transition-colors"
+                onClick={() => setMenuOpen(false)}
+              >
+                {link.label}
+              </Link>
+            ))}
+            <div className="pt-4">
+              <a
+                href="tel:+4917684995287"
+                className="flex items-center justify-center gap-2 bg-accent hover:bg-accent-dark text-white px-4 py-3 rounded-lg font-semibold text-base w-full transition-colors"
+              >
+                <Phone className="w-5 h-5" />
+                <span>+49 176 84995287</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
+    </header>
+  )
+}
