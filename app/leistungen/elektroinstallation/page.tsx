@@ -92,7 +92,7 @@ export default function ElektroinstallationPage() {
             jede Anlage vollständig mit Schaltplänen und Messprotokoll.
           </p>
           <p>
-            Mit Erfahrung aus 17 Jahren Industrieumfeld kenne ich die Anforderungen an zuverlässige
+            Mit Erfahrung aus 13 Jahren Industrieumfeld kenne ich die Anforderungen an zuverlässige
             Elektrotechnik. Ich plane und installiere mit dem nötigen Abstand zum Minimum –
             weil eine gut gemachte Elektroanlage Jahrzehnte halten soll.
           </p>

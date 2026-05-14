@@ -24,7 +24,7 @@ import FAQ from '@/components/FAQ'
 export const metadata: Metadata = {
   title: 'Wunderlich Elektrotechnik – Klima, Kälte, Strom aus einer Hand | Witten',
   description:
-    'Ihr Meisterbetrieb für Klimaanlagen, Wärmepumpen, Elektroinstallation und Photovoltaik im Ennepe-Ruhr-Kreis. 17+ Jahre Erfahrung, kältemittelzertifiziert. Kostenlose Erstberatung.',
+    'Ihr Meisterbetrieb für Klimaanlagen, Wärmepumpen, Elektroinstallation und Photovoltaik im Ennepe-Ruhr-Kreis. 13+ Jahre Erfahrung, kältemittelzertifiziert. Kostenlose Erstberatung.',
   openGraph: {
     title: 'Wunderlich Elektrotechnik – Klima, Kälte, Strom aus einer Hand',
     description:
@@ -93,8 +93,8 @@ const usps = [
   },
   {
     icon: Clock,
-    title: '17+ Jahre Berufserfahrung',
-    description: 'Seit über 17 Jahren in Refrigeration und Industrietechnik. Ich kenne die Herausforderungen in der Praxis.',
+    title: '13+ Jahre Berufserfahrung',
+    description: 'Seit über 13 Jahren in Kältetechnik und Industrietechnik. Ich kenne die Herausforderungen in der Praxis.',
   },
   {
     icon: ShieldCheck,
@@ -168,7 +168,7 @@ export default function HomePage() {
         headline={
           'Klima, Kälte, Strom –\naus einer Hand.'
         }
-        subheadline="Ihr Elektro- und Kältetechnikmeister für den Ennepe-Ruhr-Kreis und Hagen. 17+ Jahre Erfahrung, zertifiziert nach EU 517/2014."
+        subheadline="Ihr Elektro- und Kältetechnikmeister für den Ennepe-Ruhr-Kreis und Hagen. 13+ Jahre Erfahrung, zertifiziert nach EU 517/2014."
         imageUrl="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1920&q=80"
         imageAlt="Elektriker bei der Arbeit – Wunderlich Elektrotechnik"
         badge="Meisterbetrieb · HWK Dortmund · Kältemittelzertifiziert"
