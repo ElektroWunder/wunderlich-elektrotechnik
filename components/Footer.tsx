@@ -42,7 +42,9 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 shrink-0 text-accent" />
-                <span className="text-gray-500 italic">E-Mail folgt in Kürze</span>
+                <a href="mailto:sebastian.wunderlich@wunderlich-elektrotechnik.de" className="hover:text-white transition-colors break-all">
+                  sebastian.wunderlich@wunderlich-elektrotechnik.de
+                </a>
               </div>
             </div>
           </div>
