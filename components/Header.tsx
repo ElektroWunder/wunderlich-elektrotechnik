@@ -19,7 +19,7 @@ function Logo({ scrolled }: { scrolled: boolean }) {
       {/* Wrapper crops the bottom text portion of the logo image */}
       <div className={cn(
         'relative transition-all duration-300',
-        scrolled ? 'w-16 h-10 sm:w-20 sm:h-12' : 'w-28 h-16 sm:w-36 sm:h-20'
+        scrolled ? 'w-12 h-12 sm:w-14 sm:h-14' : 'w-20 h-20 sm:w-24 sm:h-24'
       )}>
         <Image
           src="/logo.png"

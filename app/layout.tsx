@@ -119,7 +119,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         <Header />
-        <main className="pt-36">{children}</main>
+        <main className="pt-32 sm:pt-36">{children}</main>
         <Footer />
         <StickyMobileCTA />
         <CookieBanner />
