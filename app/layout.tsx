@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     siteName: 'Wunderlich Elektrotechnik',
     images: [
       {
-        url: 'https://wunderlich-elektrotechnik.de/og-image.jpg',
-        width: 1200,
-        height: 630,
+        url: 'https://wunderlich-elektrotechnik.de/logo-text.png',
+        width: 601,
+        height: 599,
         alt: 'Wunderlich Elektrotechnik – Klima, Kälte, Strom aus einer Hand',
       },
     ],
