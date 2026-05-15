@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { CheckCircle } from 'lucide-react'
 import Hero from '@/components/Hero'
 import CTA from '@/components/CTA'
@@ -31,7 +31,7 @@ const steps = [
     step: '01',
     title: 'Vor-Ort-Besichtigung',
     description:
-      'Ich schaue mir Ihren Raum und die Außenwand an, prüfe wo das Außengerät montiert werden kann und wie die Leitungsführung verlaufen soll. Erst dann kann ich Ihnen einen verlässlichen Preis nennen.',
+      'Wir schauen uns Ihren Raum und die Außenwand an, prüfen wo das Außengerät montiert werden kann und wie die Leitungsführung verlaufen soll. Erst dann können wir Ihnen einen verlässlichen Preis nennen.',
   },
   {
     step: '02',
@@ -43,13 +43,13 @@ const steps = [
     step: '03',
     title: 'Installation',
     description:
-      'Ich montiere Innen- und Außengerät, verlege die Kältemittelleitungen, stelle die elektrische Verbindung her und befülle die Anlage. Eine Standard-Splitanlage ist in der Regel an einem Tag fertig.',
+      'Wir montieren Innen- und Außengerät, verlegen die Kältemittelleitungen, stellen die elektrische Verbindung her und befüllen die Anlage. Eine Standard-Splitanlage ist in der Regel an einem Tag fertig.',
   },
   {
     step: '04',
     title: 'Inbetriebnahme & Einweisung',
     description:
-      'Ich nehme die Anlage in Betrieb, prüfe alle Funktionen und zeige Ihnen, wie Sie die Bedienung und Filterpflege selbst durchführen können.',
+      'Wir nehmen die Anlage in Betrieb, prüfen alle Funktionen und zeigen Ihnen, wie Sie die Bedienung und Filterpflege selbst durchführen können.',
   },
 ]
 
@@ -57,12 +57,12 @@ const faqs = [
   {
     question: 'Welche Anlagen installieren Sie?',
     answer:
-      'Ich installiere Splitklimaanlagen – das heißt: ein Innengerät (Wandgerät), ein Außengerät. Ich arbeite bevorzugt mit Daikin, Mitsubishi Electric und Toshiba, da diese Marken zuverlässig und langlebig sind. Multisplit-Anlagen (ein Außengerät, mehrere Innengeräte) sind ebenfalls möglich.',
+      'Wir installieren Splitklimaanlagen – das heißt: ein Innengerät (Wandgerät), ein Außengerät. Wir arbeiten bevorzugt mit Daikin, Mitsubishi Electric und Toshiba, da diese Marken zuverlässig und langlebig sind. Multisplit-Anlagen (ein Außengerät, mehrere Innengeräte) sind ebenfalls möglich.',
   },
   {
     question: 'Kann ich auch eine bestehende Anlage warten oder reparieren lassen?',
     answer:
-      'Ja. Ich warte und repariere Splitklimaanlagen – unabhängig davon, wo sie installiert wurden. Bei der Wartung reinige ich Filter und Wärmetauscher, prüfe den Kältemittelkreislauf und dokumentiere den Zustand der Anlage.',
+      'Ja. Wir warten und reparieren Splitklimaanlagen – unabhängig davon, wo sie installiert wurden. Bei der Wartung reinigen wir Filter und Wärmetauscher, prüfen den Kältemittelkreislauf und dokumentieren den Zustand der Anlage.',
   },
   {
     question: 'Kann man mit der Klimaanlage auch heizen?',
@@ -72,12 +72,12 @@ const faqs = [
   {
     question: 'Brauche ich eine Baugenehmigung für das Außengerät?',
     answer:
-      'In NRW ist das Außengerät einer Splitanlage in den meisten Fällen genehmigungsfrei. In denkmalgeschützten Gebäuden oder bei bestimmten Aufstellsituationen kann das anders sein. Ich kläre das mit Ihnen vor Ort.',
+      'In NRW ist das Außengerät einer Splitanlage in den meisten Fällen genehmigungsfrei. In denkmalgeschützten Gebäuden oder bei bestimmten Aufstellsituationen kann das anders sein. Wir klären das mit Ihnen vor Ort.',
   },
   {
     question: 'Was kostet eine Splitklimaanlage inklusive Montage?',
     answer:
-      'Das hängt vom Gerät, der Leitungslänge und dem Montageaufwand ab. Als Orientierung: eine einfache Splitanlage (Wohnzimmer, 20–35 m²) liegt inklusive Montage typischerweise zwischen 1.500 € und 2.800 €. Nach der Besichtigung nenne ich Ihnen einen genauen Preis.',
+      'Das hängt vom Gerät, der Leitungslänge und dem Montageaufwand ab. Als Orientierung: eine einfache Splitanlage (Wohnzimmer, 20–35 m²) liegt inklusive Montage typischerweise zwischen 1.500 € und 2.800 €. Nach der Besichtigung nennen wir Ihnen einen genauen Preis.',
   },
 ]
 
@@ -96,16 +96,16 @@ export default function KlimaanlagenPage() {
       {/* Beschreibung */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose-content">
-          <h2>Was ich tue – und was nicht</h2>
+          <h2>Was wir tun – und was nicht</h2>
           <p>
-            Ich installiere, warte und repariere <strong>Split- und Multisplitanlagen</strong>. Das ist mein Ding,
-            das mache ich sauber und zuverlässig. Was ich nicht anbiete: komplexe Auslegungsberechnungen
+            Wir installieren, warten und reparieren <strong>Split- und Multisplitanlagen</strong>. Das ist unser Metier,
+            das machen wir sauber und zuverlässig. Was wir nicht anbieten: komplexe Auslegungsberechnungen
             für Großobjekte mit vielen Zonen. Wenn Sie eine Klimaanlage für ein Zimmer, mehrere Räume,
-            ein Büro oder eine kleine Gewerbeeinheit brauchen – dann bin ich der Richtige.
+            ein Büro oder eine kleine Gewerbeeinheit brauchen – dann sind wir die richtige Wahl.
           </p>
           <p>
-            Als Kältetechniker mit <strong>Kältemittelschein Kategorie I</strong> nach EU 517/2014
-            darf ich alle Kältemittel fachgerecht handhaben. Die Arbeiten werden vollständig
+            Als Kältetechnikbetrieb mit <strong>Kältemittelschein Kategorie I</strong> nach EU 517/2014
+            dürfen wir alle Kältemittel fachgerecht handhaben. Die Arbeiten werden vollständig
             dokumentiert und protokolliert.
           </p>
 
@@ -121,9 +121,9 @@ export default function KlimaanlagenPage() {
 
           <h2>Marken</h2>
           <p>
-            Ich installiere bevorzugt <strong>Daikin</strong>, <strong>Mitsubishi Electric</strong> und
+            Wir installieren bevorzugt <strong>Daikin</strong>, <strong>Mitsubishi Electric</strong> und
             <strong> Toshiba</strong> – Hersteller mit guter Ersatzteilversorgung und langen
-            Garantiezeiten. Auf Wunsch installiere ich auch andere namhafte Marken.
+            Garantiezeiten. Auf Wunsch installieren wir auch andere namhafte Marken.
           </p>
         </div>
       </section>
@@ -171,7 +171,7 @@ export default function KlimaanlagenPage() {
 
       <CTA
         headline="Klimaanlage anfragen"
-        subtext="Angebot nach Vor-Ort-Besichtigung. Ich melde mich innerhalb von 24 Stunden."
+        subtext="Angebot nach Vor-Ort-Besichtigung. Wir melden uns innerhalb von 24 Stunden."
         primaryLabel="Jetzt anfragen"
       />
     </>

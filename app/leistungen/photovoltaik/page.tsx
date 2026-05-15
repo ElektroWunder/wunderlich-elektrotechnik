@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { CheckCircle } from 'lucide-react'
 import Hero from '@/components/Hero'
 import CTA from '@/components/CTA'
@@ -27,25 +27,25 @@ const steps = [
     step: '01',
     title: 'Vor-Ort-Einschätzung',
     description:
-      'Ich schaue mir Ihre Dachfläche an – Ausrichtung, Neigung, mögliche Verschattung – und schätze, wie viele Module und welche Leistung (kWp) realistisch umsetzbar sind. Eine statische Dachbewertung ist nicht mein Fachgebiet; wenn nötig, ziehen wir einen Statiker hinzu.',
+      'Wir schauen uns Ihre Dachfläche an – Ausrichtung, Neigung, mögliche Verschattung – und schätzen, wie viele Module und welche Leistung (kWp) realistisch umsetzbar sind. Eine statische Dachbewertung ist nicht unser Fachgebiet; wenn nötig, ziehen wir einen Statiker hinzu.',
   },
   {
     step: '02',
     title: 'Angebot und Komponentenwahl',
     description:
-      'Sie erhalten ein Angebot für die elektrische Installation. Ich empfehle Ihnen Modultypen und Wechselrichter – die endgültige Wahl liegt bei Ihnen.',
+      'Sie erhalten ein Angebot für die elektrische Installation. Wir empfehlen Ihnen Modultypen und Wechselrichter – die endgültige Wahl liegt bei Ihnen.',
   },
   {
     step: '03',
     title: 'Elektrische Installation',
     description:
-      'Ich übernehme die komplette Elektroinstallation: Modul- und Wechselrichteranschluss, DC- und AC-Leitungen, Zählerkonzept, Speicheranbindung. Die Anmeldung beim Netzbetreiber und der MaStR erledige ich für Sie.',
+      'Wir übernehmen die komplette Elektroinstallation: Modul- und Wechselrichteranschluss, DC- und AC-Leitungen, Zählerkonzept, Speicheranbindung. Die Anmeldung beim Netzbetreiber und der MaStR erledigen wir für Sie.',
   },
   {
     step: '04',
     title: 'Inbetriebnahme',
     description:
-      'Nach der Netzfreischaltung nehme ich die Anlage in Betrieb und richte das Monitoring ein, damit Sie die Produktion Ihrer Anlage im Blick behalten.',
+      'Nach der Netzfreischaltung nehmen wir die Anlage in Betrieb und richten das Monitoring ein, damit Sie die Produktion Ihrer Anlage im Blick behalten.',
   },
 ]
 
@@ -53,22 +53,22 @@ const faqs = [
   {
     question: 'Was genau übernehmen Sie bei der PV-Installation?',
     answer:
-      'Ich übernehme den elektrischen Teil: Montage und Anschluss der Module, Wechselrichter, DC- und AC-Verkabelung, Speicher, Zählerkonzept, Netzanmeldung. Was ich nicht mache: Dachdeckerarbeiten, statische Berechnungen oder Gerüstbau. Das Aufständerungssystem montiere ich, wenn es ein einfaches System ist – bei komplexeren Dächern arbeite ich mit Partnern.',
+      'Wir übernehmen den elektrischen Teil: Montage und Anschluss der Module, Wechselrichter, DC- und AC-Verkabelung, Speicher, Zählerkonzept, Netzanmeldung. Was wir nicht machen: Dachdeckerarbeiten, statische Berechnungen oder Gerüstbau. Das Aufständerungssystem montieren wir, wenn es ein einfaches System ist – bei komplexeren Dächern arbeiten wir mit Partnern.',
   },
   {
-    question: 'Können Sie mir sagen, wie viele Module auf mein Dach passen?',
+    question: 'Können Sie uns sagen, wie viele Module auf mein Dach passen?',
     answer:
-      'Ich kann anhand von Dachfläche, Ausrichtung und Neigung einschätzen, wie viele Module sinnvoll platziert werden können und welche Gesamtleistung (kWp) das ergibt. Eine detaillierte Wirtschaftlichkeitsberechnung oder eine professionelle Energieberatung biete ich nicht an.',
+      'Wir können anhand von Dachfläche, Ausrichtung und Neigung einschätzen, wie viele Module sinnvoll platziert werden können und welche Gesamtleistung (kWp) das ergibt. Eine detaillierte Wirtschaftlichkeitsberechnung oder eine professionelle Energieberatung bieten wir nicht an.',
   },
   {
     question: 'Übernehmen Sie die Förderbeantragung?',
     answer:
-      'Ich melde die Anlage beim Netzbetreiber und im Marktstammdatenregister (MaStR) an – das ist Pflicht. Steuerliche Beratung oder BAFA-Anträge sind nicht mein Fachgebiet, da wenden Sie sich an einen Steuerberater oder Energieberater.',
+      'Wir melden die Anlage beim Netzbetreiber und im Marktstammdatenregister (MaStR) an – das ist Pflicht. Steuerliche Beratung oder BAFA-Anträge sind nicht unser Fachgebiet, da wenden Sie sich an einen Steuerberater oder Energieberater.',
   },
   {
     question: 'Können Sie einen Batteriespeicher nachträglich hinzufügen?',
     answer:
-      'Ja, wenn der Wechselrichter speicherfähig ist oder ein separater Speicher-Wechselrichter vorgesehen wird. Ich schaue mir das an und sage Ihnen, ob und wie das technisch umsetzbar ist.',
+      'Ja, wenn der Wechselrichter speicherfähig ist oder ein separater Speicher-Wechselrichter vorgesehen wird. Wir schauen uns das an und sagen Ihnen, ob und wie das technisch umsetzbar ist.',
   },
 ]
 
@@ -85,15 +85,15 @@ export default function PhotovoltaikPage() {
 
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose-content">
-          <h2>Was ich übernehme – und was nicht</h2>
+          <h2>Was wir übernehmen – und was nicht</h2>
           <p>
-            Ich installiere PV-Anlagen auf der <strong>elektrischen Seite</strong>: Modulanschluss,
+            Wir installieren PV-Anlagen auf der <strong>elektrischen Seite</strong>: Modulanschluss,
             Wechselrichter, DC- und AC-Leitungen, Speicheranbindung, Zählerkonzept und Netzanmeldung.
-            Was ich nicht anbiete: statische Dachbewertung, Gerüstbau oder ausführliche
+            Was wir nicht anbieten: statische Dachbewertung, Gerüstbau oder ausführliche
             Wirtschaftlichkeitsberechnungen.
           </p>
           <p>
-            Ich schaue mir Ihre Dachfläche an und schätze ab, welche Anlagenleistung (kWp)
+            Wir schauen uns Ihre Dachfläche an und schätzen ab, welche Anlagenleistung (kWp)
             realistisch umsetzbar ist – auf Basis von Ausrichtung, Neigung und verfügbarer Fläche.
             Diese Einschätzung erfolgt unverbindlich.
           </p>
@@ -102,13 +102,13 @@ export default function PhotovoltaikPage() {
           <p>
             Ein <strong>Batteriespeicher</strong> macht tagsüber produzierten Strom für die
             Abendstunden nutzbar und erhöht den Eigenverbrauch deutlich. Ob er sich rechnet,
-            hängt von Ihrem Verbrauchsprofil und Strompreis ab – ich berate Sie dazu ehrlich.
+            hängt von Ihrem Verbrauchsprofil und Strompreis ab – wir beraten Sie dazu ehrlich.
           </p>
 
           <h2>Kombination mit Wallbox</h2>
           <p>
             Eine PV-Anlage lässt sich gut mit einer Wallbox kombinieren – dann laden Sie Ihr
-            E-Auto tagsüber mit Sonnenstrom. Ich plane beides aufeinander abgestimmt.
+            E-Auto tagsüber mit Sonnenstrom. Wir planen beides aufeinander abgestimmt.
           </p>
         </div>
       </section>
@@ -150,7 +150,7 @@ export default function PhotovoltaikPage() {
 
       <CTA
         headline="PV-Anlage anfragen"
-        subtext="Vor-Ort-Einschätzung – ich sage Ihnen ehrlich, was ich umsetzen kann."
+        subtext="Vor-Ort-Einschätzung – wir sagen Ihnen ehrlich, was wir umsetzen können."
       />
     </>
   )

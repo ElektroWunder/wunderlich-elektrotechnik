@@ -40,7 +40,7 @@ export default function ReferenzenPage() {
           </p>
 
           <p className="text-gray-500 leading-relaxed mb-10">
-            Wenn Sie Fragen zur Qualität meiner Arbeit haben: Schreiben Sie mir einfach.
+            Wenn Sie Fragen zur Qualität unserer Arbeit haben: Schreiben Sie uns einfach.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -56,7 +56,7 @@ export default function ReferenzenPage() {
       </section>
 
       <CTA
-        headline="Werden Sie mein erster Referenzkunde?"
+        headline="Werden Sie unser erster Referenzkunde?"
         subtext="Vor-Ort-Besichtigung, transparentes Angebot – und anschließend ein sauber ausgeführter Auftrag."
         primaryLabel="Anfrage stellen"
       />

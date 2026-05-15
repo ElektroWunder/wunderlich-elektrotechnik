@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { CheckCircle, Info } from 'lucide-react'
 import Hero from '@/components/Hero'
 import CTA from '@/components/CTA'
@@ -24,22 +24,22 @@ const faqs = [
   {
     question: 'Was übernehmen Sie bei einer Wärmepumpeninstallation?',
     answer:
-      'Ich übernehme den elektrischen Teil: die Zuleitung vom Verteilerkasten zur Wärmepumpe, die Absicherung, Steuer- und Kommunikationsleitungen sowie den Lastabwurf nach §14a EnWG. Die Heizungsseite (Rohrleitungen, Heizkörper, Speicher) ist Sache des Heizungsbauers – da arbeite ich gerne mit einem Partner zusammen.',
+      'Wir übernehmen den elektrischen Teil: die Zuleitung vom Verteilerkasten zur Wärmepumpe, die Absicherung, Steuer- und Kommunikationsleitungen sowie den Lastabwurf nach §14a EnWG. Die Heizungsseite (Rohrleitungen, Heizkörper, Speicher) ist Sache des Heizungsbauers – da arbeiten wir gerne mit einem Partner zusammen.',
   },
   {
     question: 'Was ist der Lastabwurf nach §14a EnWG?',
     answer:
-      'Wärmepumpen ab einer bestimmten Leistung müssen nach §14a EnWG steuerbar sein – der Netzbetreiber darf die Leistung in Engpasssituationen kurzzeitig drosseln. Dafür ist ein geeignetes Schütz oder Lastabwurf-Relais erforderlich. Ich installiere das normgerecht und melde die Anlage beim Netzbetreiber an.',
+      'Wärmepumpen ab einer bestimmten Leistung müssen nach §14a EnWG steuerbar sein – der Netzbetreiber darf die Leistung in Engpasssituationen kurzzeitig drosseln. Dafür ist ein geeignetes Schütz oder Lastabwurf-Relais erforderlich. Wir installieren das normgerecht und melde die Anlage beim Netzbetreiber an.',
   },
   {
     question: 'Übernehmen Sie auch die Förderberatung (BAFA)?',
     answer:
-      'Nein – Förderanträge und Förderberatung sind nicht mein Schwerpunkt. Dafür wenden Sie sich am besten an einen Heizungsbauer oder Energieberater. Ich stelle Ihnen die handwerkliche Fachunternehmererklärung für den Elektroanschluss aus, die Sie für die Förderung benötigen.',
+      'Nein – Förderanträge und Förderberatung sind nicht unser Schwerpunkt. Dafür wenden Sie sich am besten an einen Heizungsbauer oder Energieberater. Wir stellen Ihnen die handwerkliche Fachunternehmererklärung für den Elektroanschluss aus, die Sie für die Förderung benötigen.',
   },
   {
     question: 'Können Sie auch den hydraulischen Abgleich durchführen?',
     answer:
-      'Nein – hydraulischer Abgleich ist ein heizungsseitiger Vorgang und nicht mein Fachgebiet. Das gehört in die Hände des Heizungsbauers.',
+      'Nein – hydraulischer Abgleich ist ein heizungsseitiger Vorgang und nicht unser Fachgebiet. Das gehört in die Hände des Heizungsbauers.',
   },
 ]
 
@@ -48,7 +48,7 @@ export default function WaermepumpenPage() {
     <>
       <Hero
         headline="Wärmepumpen – fachgerechter Elektroanschluss."
-        subheadline="Den elektrischen Anschluss Ihrer Wärmepumpe übernehme ich normgerecht und zuverlässig – in Witten und Umgebung. Kältemittelzertifiziert nach EU 517/2014."
+        subheadline="Den elektrischen Anschluss Ihrer Wärmepumpe übernehmen wir normgerecht und zuverlässig – in Witten und Umgebung. Kältemittelzertifiziert nach EU 517/2014."
         imageUrl="https://images.unsplash.com/photo-1558618047-f7c91b8f6d97?w=1920&q=80"
         imageAlt="Wärmepumpe Außeneinheit – Wunderlich Elektrotechnik"
         badge="Elektroanschluss · §14a EnWG · Kältemittelzertifiziert"
@@ -60,10 +60,10 @@ export default function WaermepumpenPage() {
           <div className="flex items-start gap-4">
             <Info className="w-6 h-6 text-accent shrink-0 mt-0.5" />
             <p className="text-gray-700 text-sm leading-relaxed">
-              <strong>Mein Beitrag bei Wärmepumpen:</strong> Ich bin für den elektrischen Anschluss
+              <strong>Unser Beitrag bei Wärmepumpen:</strong> Wir sind für den elektrischen Anschluss
               zuständig – Zuleitung, Absicherung, Steuerung, Lastabwurf. Die Heizungsseite
               (Rohrleitungen, hydraulischer Abgleich, Pufferspeicher) wird vom Heizungsbauer übernommen.
-              Bei Bedarf empfehle ich Ihnen einen geeigneten Partner.
+              Bei Bedarf empfehlen wir Ihnen einen geeigneten Partner.
             </p>
           </div>
         </div>
@@ -75,15 +75,15 @@ export default function WaermepumpenPage() {
           <p>
             Eine Wärmepumpe ist ein leistungsstarker Verbraucher. Der Anschluss ans Hausnetz
             muss entsprechend dimensioniert sein: richtige Leitungsquerschnitte, korrekte
-            Absicherung, Schutzorgane – alles nach <strong>VDE 0100</strong>. Ich verlege die
-            Zuleitung, baue die Absicherung in den Verteilerkasten ein und stelle alle
+            Absicherung, Schutzorgane – alles nach <strong>VDE 0100</strong>. Wir verlegen die
+            Zuleitung, bauen die Absicherung in den Verteilerkasten ein und stellen alle
             Steuer- und Kommunikationsleitungen zwischen Wärmepumpe und Regelung her.
           </p>
           <p>
             Pflicht ist seit 2024 außerdem die <strong>§14a-EnWG-Konformität</strong>: Wärmepumpen
             müssen steuerbar installiert werden, damit der Netzbetreiber die Leistung in
-            Spitzenlastzeiten kurzzeitig reduzieren kann. Ich installiere das passende Schütz
-            und erledige die Anmeldung beim Netzbetreiber.
+            Spitzenlastzeiten kurzzeitig reduzieren kann. Wir installieren das passende Schütz
+            und erledigen die Anmeldung beim Netzbetreiber.
           </p>
         </div>
       </section>
@@ -106,7 +106,7 @@ export default function WaermepumpenPage() {
 
       <CTA
         headline="Wärmepumpe anschließen lassen"
-        subtext="Ich schaue es mir vor Ort an und erstelle ein schriftliches Angebot für den Elektroanschluss."
+        subtext="Wir schauen es uns vor Ort an und erstellen ein schriftliches Angebot für den Elektroanschluss."
       />
     </>
   )

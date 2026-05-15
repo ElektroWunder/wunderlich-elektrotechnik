@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import Hero from '@/components/Hero'
 import CTA from '@/components/CTA'
 import FAQ from '@/components/FAQ'
@@ -28,17 +28,17 @@ const faqs = [
   {
     question: 'Wie lange dauert die Klimaanlagen-Installation in Witten?',
     answer:
-      'Eine Standard-Splitanlage ist in Witten in der Regel an einem Tag installiert. Ich bin im gesamten Stadtgebiet Witten tätig.',
+      'Eine Standard-Splitanlage ist in Witten in der Regel an einem Tag installiert. Wir sind im gesamten Stadtgebiet Witten tätig.',
   },
   {
     question: 'Installieren Sie auch in Witten-Annen, Herbede oder Heven?',
     answer:
-      'Ja, ich bin in allen Witten-Stadtteilen tätig: Witten-Mitte, Annen, Herbede, Heven, Bommern, Durchholz und weiteren Ortsteilen – alles ohne zusätzliche Anfahrtkosten.',
+      'Ja, wir sind in allen Witten-Stadtteilen tätig: Witten-Mitte, Annen, Herbede, Heven, Bommern, Durchholz und weiteren Ortsteilen – alles ohne zusätzliche Anfahrtkosten.',
   },
   {
     question: 'Gibt es in Witten Einschränkungen für Klimaanlagen-Außengeräte?',
     answer:
-      'Im historischen Bereich der Wittener Innenstadt und in denkmalgeschützten Gebäuden kann die Aufstellung von Außengeräten eingeschränkt sein. Ich kläre das im Rahmen der Vor-Ort-Besichtigung mit Ihnen ab.',
+      'Im historischen Bereich der Wittener Innenstadt und in denkmalgeschützten Gebäuden kann die Aufstellung von Außengeräten eingeschränkt sein. Wir klären das im Rahmen der Vor-Ort-Besichtigung mit Ihnen ab.',
   },
 ]
 
@@ -63,17 +63,17 @@ export default function KlimaanlagenWittenPage() {
           <div className="prose-content">
             <h2>Klimatechnik für Witten und Umgebung</h2>
             <p>
-              Als Elektro- und Kältetechnikmeister mit Sitz in Witten bin ich Ihr direkter Ansprechpartner für
+              Als Elektro- und Kältetechnikbetrieb mit Sitz in Witten sind wir Ihr direkter Ansprechpartner für
               Klimaanlagen im gesamten Stadtgebiet. Ob Wohnung in der Innenstadt, Einfamilienhaus in Herbede
-              oder Gewerbeobjekt in Annen – ich bin schnell vor Ort und kenne die örtlichen Gegebenheiten.
+              oder Gewerbeobjekt in Annen – wir sind schnell vor Ort und kennen die örtlichen Gegebenheiten.
             </p>
             <p>
-              Als Wittener Betrieb bin ich nicht nur preisgünstig in der Anfahrt – ich bin auch persönlich
-              erreichbar und stehe nach der Installation für Service und Wartung zur Verfügung. Kein Hotline-
+              Als Wittener Betrieb sind wir nicht nur preisgünstig in der Anfahrt – wir sind auch persönlich
+              erreichbar und stehen nach der Installation für Service und Wartung zur Verfügung. Kein Hotline-
               Chaos, kein Warten auf Rückrufe.
             </p>
 
-            <h2>Was ich in Witten installiere</h2>
+            <h2>Was wir in Witten installieren</h2>
           </div>
 
           <div className="grid sm:grid-cols-2 gap-4 mt-6">
@@ -98,7 +98,7 @@ export default function KlimaanlagenWittenPage() {
 
       <CTA
         headline="Klimaanlage in Witten anfragen"
-        subtext="Ich melde mich innerhalb von 24 Stunden und komme zur Vor-Ort-Besichtigung – ohne Verpflichtung."
+        subtext="Wir melden uns innerhalb von 24 Stunden und kommen zur Vor-Ort-Besichtigung – ohne Verpflichtung."
       />
     </>
   )

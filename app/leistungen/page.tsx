@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { AirVent, Thermometer, Zap, Sun, Car, Wrench, ArrowRight } from 'lucide-react'
 import Link from 'next/link'
 import Hero from '@/components/Hero'
@@ -66,7 +66,7 @@ export default function LeistungenPage() {
     <>
       <Hero
         headline="Alles aus einer Hand"
-        subheadline="Ich decke das komplette Spektrum aus Elektro- und Kältetechnik ab – so haben Sie einen einzigen Ansprechpartner für alle Gewerke."
+        subheadline="Wir decken das komplette Spektrum aus Elektro- und Kältetechnik ab – so haben Sie einen einzigen Ansprechpartner für alle Gewerke."
         imageUrl="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1920&q=80"
         imageAlt="Elektrische Leitungen und Schaltschrank – Wunderlich Elektrotechnik"
         badge="6 Leistungsbereiche · Meisterbetrieb · EN-Kreis"
@@ -118,7 +118,7 @@ export default function LeistungenPage() {
 
       <CTA
         headline="Nicht das Richtige dabei?"
-        subtext="Beschreiben Sie mir einfach Ihr Vorhaben – ich sage Ihnen ehrlich, ob und wie ich helfen kann."
+        subtext="Beschreiben Sie uns einfach Ihr Vorhaben – wir sagen Ihnen ehrlich, ob und wie wir helfen können."
         primaryLabel="Anfrage stellen"
       />
     </>

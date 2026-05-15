@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { CheckCircle } from 'lucide-react'
 import Hero from '@/components/Hero'
 import CTA from '@/components/CTA'
@@ -26,27 +26,27 @@ const faqs = [
   {
     question: '11 oder 22 kW – was brauche ich wirklich?',
     answer:
-      'Die meisten Elektroautos laden mit maximal 11 kW AC. Eine 11-kW-Wallbox lädt ein leeres 60-kWh-Fahrzeug in ca. 6 Stunden voll – über Nacht kein Problem. 22 kW lohnen sich nur, wenn Ihr Fahrzeug 22 kW unterstützt (aktuell wenige Modelle: z. B. Renault Zoe ältere Jahrgänge) oder wenn Sie mehrere Fahrzeuge über Lastmanagement teilen wollen. Ich berate Sie zur sinnvollen Lösung.',
+      'Die meisten Elektroautos laden mit maximal 11 kW AC. Eine 11-kW-Wallbox lädt ein leeres 60-kWh-Fahrzeug in ca. 6 Stunden voll – über Nacht kein Problem. 22 kW lohnen sich nur, wenn Ihr Fahrzeug 22 kW unterstützt (aktuell wenige Modelle: z. B. Renault Zoe ältere Jahrgänge) oder wenn Sie mehrere Fahrzeuge über Lastmanagement teilen wollen. Wir beraten Sie zur sinnvollen Lösung.',
   },
   {
     question: 'Muss ich die Wallbox beim Netzbetreiber anmelden?',
     answer:
-      'Ladeeinrichtungen ab 11 kW müssen dem Netzbetreiber gemeldet werden (§ 14a EnWG). Der Netzbetreiber kann in diesem Fall ein steuerbares Gerät fordern (Smart Meter). Ich erledige diese Anmeldung für Sie und installiere nur Geräte, die §-14a-kompatibel sind.',
+      'Ladeeinrichtungen ab 11 kW müssen dem Netzbetreiber gemeldet werden (§ 14a EnWG). Der Netzbetreiber kann in diesem Fall ein steuerbares Gerät fordern (Smart Meter). Wir erledigen diese Anmeldung für Sie und installieren nur Geräte, die §-14a-kompatibel sind.',
   },
   {
     question: 'Welche Förderung gibt es für Wallboxen?',
     answer:
-      'Der KfW-Zuschuss 442 für private Wallboxen läuft derzeit nicht mehr. Für gewerbliche Ladelösungen gibt es jedoch Programme auf Bundes- und Landesebene. Einige Arbeitgeber erstatten die Installationskosten steueroptimiert. Ich halte mich zu aktuellen Programmen auf dem Laufenden – sprechen Sie mich an.',
+      'Der KfW-Zuschuss 442 für private Wallboxen läuft derzeit nicht mehr. Für gewerbliche Ladelösungen gibt es jedoch Programme auf Bundes- und Landesebene. Einige Arbeitgeber erstatten die Installationskosten steueroptimiert. Wir halten uns zu aktuellen Programmen auf dem Laufenden – sprechen Sie uns an.',
   },
   {
     question: 'Kann ich die Wallbox mit meiner PV-Anlage koppeln?',
     answer:
-      'Ja – viele moderne Wallboxen (z. B. von go-e, Fronius Wattpilot, Keba) unterstützen PV-Überschussladen. Das bedeutet: Wenn die PV-Anlage mehr produziert als das Haus verbraucht, wird der Überschuss direkt ins Fahrzeug geladen statt eingespeist. Das maximiert den Eigenverbrauch. Ich plane Wallbox und PV-Anlage von Anfang an aufeinander abgestimmt.',
+      'Ja – viele moderne Wallboxen (z. B. von go-e, Fronius Wattpilot, Keba) unterstützen PV-Überschussladen. Das bedeutet: Wenn die PV-Anlage mehr produziert als das Haus verbraucht, wird der Überschuss direkt ins Fahrzeug geladen statt eingespeist. Das maximiert den Eigenverbrauch. Wir planen Wallbox und PV-Anlage von Anfang an aufeinander abgestimmt.',
   },
   {
     question: 'Was kostet eine Wallbox-Installation?',
     answer:
-      'Die Installationskosten hängen vom Verlegeweg (Wanddurchbruch, Kabelkanal, Erdkabel), der Leitungslänge und dem notwendigen Zuleitungsquerschnitt ab. Typisch für eine private Einzelwallbox mit kurzer Zuleitung: 600–1.200 € Installations- und Materialkosten, plus die Wallbox selbst (250–800 €). Ich erstelle Ihnen nach kurzer Abfrage ein konkretes Angebot.',
+      'Die Installationskosten hängen vom Verlegeweg (Wanddurchbruch, Kabelkanal, Erdkabel), der Leitungslänge und dem notwendigen Zuleitungsquerschnitt ab. Typisch für eine private Einzelwallbox mit kurzer Zuleitung: 600–1.200 € Installations- und Materialkosten, plus die Wallbox selbst (250–800 €). Wir erstellen Ihnen nach kurzer Abfrage ein konkretes Angebot.',
   },
 ]
 
@@ -71,7 +71,7 @@ export default function WallboxPage() {
             Alternative.
           </p>
           <p>
-            Ich installiere Wallboxen nach <strong>VDE 0100-722</strong> – der Norm für elektrische Anlagen
+            Wir installieren Wallboxen nach <strong>VDE 0100-722</strong> – der Norm für elektrische Anlagen
             zum Laden von Elektrofahrzeugen. Das beinhaltet die richtige Absicherung, den vorgeschriebenen
             Gleichfehlerstrom-Schutz (DC-FI, Typ B) und die korrekte Zuleitungsdimensionierung.
           </p>
@@ -80,7 +80,7 @@ export default function WallboxPage() {
           <p>
             Wer Mitarbeitern oder Kunden das Laden berechnen möchte, braucht ein <strong>eichrechtskonformes
             Abrechnungssystem</strong>. Nur dann darf der Strom nach kWh abgerechnet werden – nicht nur
-            pauschal. Ich installiere entsprechend zertifizierte Ladestationen und richte die notwendige
+            pauschal. Wir installieren entsprechend zertifizierte Ladestationen und richte die notwendige
             Backend-Anbindung ein.
           </p>
 
@@ -111,7 +111,7 @@ export default function WallboxPage() {
 
       <CTA
         headline="Wallbox anfragen"
-        subtext="Beschreiben Sie kurz Ihre Situation – ich erstelle Ihnen rasch ein konkretes Angebot. Die Installation ist in den meisten Fällen an einem halben Tag erledigt."
+        subtext="Beschreiben Sie kurz Ihre Situation – wir erstellen Ihnen rasch ein konkretes Angebot. Die Installation ist in den meisten Fällen an einem halben Tag erledigt."
       />
     </>
   )

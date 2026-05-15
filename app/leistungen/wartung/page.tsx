@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { CheckCircle } from 'lucide-react'
 import Hero from '@/components/Hero'
 import CTA from '@/components/CTA'
@@ -36,7 +36,7 @@ const faqs = [
   {
     question: 'Wie oft muss eine Klimaanlage gewartet werden?',
     answer:
-      'Nach EU 517/2014 sind Anlagen mit mehr als 3 kg Kältemittel mindestens jährlich auf Dichtheit zu prüfen. Unabhängig von der Norm empfehle ich eine Jahreswartung, um die Energieeffizienz zu erhalten, die Herstellergarantie nicht zu gefährden und teure Folgeschäden zu vermeiden. Ich biete Wartungsverträge an, bei denen ich den Termin selbst im Blick behalte.',
+      'Nach EU 517/2014 sind Anlagen mit mehr als 3 kg Kältemittel mindestens jährlich auf Dichtheit zu prüfen. Unabhängig von der Norm empfehlen wir eine Jahreswartung, um die Energieeffizienz zu erhalten, die Herstellergarantie nicht zu gefährden und teure Folgeschäden zu vermeiden. Wir bieten Wartungsverträge an, bei denen wir den Termin selbst im Blick behalten.',
   },
   {
     question: 'Was ist die DGUV V3 / der E-Check?',
@@ -46,12 +46,12 @@ const faqs = [
   {
     question: 'Was passiert, wenn bei der DGUV-Prüfung Mängel festgestellt werden?',
     answer:
-      'Ich dokumentiere alle Mängel im Prüfprotokoll mit Handlungsempfehlung. Kleinere Mängel kann ich häufig direkt vor Ort beheben. Bei sicherheitsrelevanten Mängeln wird das betroffene Betriebsmittel sofort außer Betrieb genommen, bis es repariert oder ersetzt wurde. Sie erhalten eine klare Übersicht mit Prioritäten.',
+      'Wir dokumentieren alle Mängel im Prüfprotokoll mit Handlungsempfehlung. Kleinere Mängel können wir häufig direkt vor Ort beheben. Bei sicherheitsrelevanten Mängeln wird das betroffene Betriebsmittel sofort außer Betrieb genommen, bis es repariert oder ersetzt wurde. Sie erhalten eine klare Übersicht mit Prioritäten.',
   },
   {
     question: 'Bieten Sie Wartungsverträge an?',
     answer:
-      'Ja – ich schließe Wartungsverträge für Klimaanlagen ab. Das hat Vorteile: fester Jahrespreis, fester Termin, keine Überraschungen. Im Vertrag ist die vollständige Wartung inkl. Kältemittelkontrolle und Prüfprotokoll enthalten. Sprechen Sie mich an, ich erstelle Ihnen ein individuelles Angebot abhängig von Anlagentyp und Anzahl.',
+      'Ja – wir schließen Wartungsverträge für Klimaanlagen ab. Das hat Vorteile: fester Jahrespreis, fester Termin, keine Überraschungen. Im Vertrag ist die vollständige Wartung inkl. Kältemittelkontrolle und Prüfprotokoll enthalten. Sprechen Sie uns an, wir erstellen Ihnen ein individuelles Angebot abhängig von Anlagentyp und Anzahl.',
   },
 ]
 
@@ -77,8 +77,8 @@ export default function WartungPage() {
           </p>
           <p>
             Dazu kommt die Pflicht nach <strong>EU 517/2014</strong>: Anlagen mit mehr als 3 kg Kältemittel
-            müssen jährlich auf Dichtheit geprüft werden – mit dokumentiertem Ergebnis. Ich führe diese
-            Prüfungen durch und stelle das erforderliche Prüfprotokoll aus.
+            müssen jährlich auf Dichtheit geprüft werden – mit dokumentiertem Ergebnis. Wir führen diese
+            Prüfungen durch und stellen das erforderliche Prüfprotokoll aus.
           </p>
 
           <h2>E-Check für Gewerbebetriebe</h2>
@@ -86,7 +86,7 @@ export default function WartungPage() {
             Der E-Check (DGUV Vorschrift 3) ist für Unternehmen keine freiwillige Leistung, sondern
             gesetzliche Pflicht. Arbeitgeber haften bei Elektrounfällen, wenn keine regelmäßige Prüfung
             nachgewiesen werden kann. Versicherungen können im Schadensfall die Leistung kürzen.
-            Ich führe DGUV-V3-Prüfungen durch und erstelle lückenlose Prüfprotokolle.
+            Wir führen DGUV-V3-Prüfungen durch und erstellen lückenlose Prüfprotokolle.
           </p>
         </div>
       </section>
@@ -124,7 +124,7 @@ export default function WartungPage() {
 
       <CTA
         headline="Wartung oder E-Check anfragen"
-        subtext="Ich erstelle Ihnen ein Angebot für einen Wartungsvertrag oder eine einmalige DGUV-V3-Prüfung. Vollständige Dokumentation selbstverständlich inklusive."
+        subtext="Wir erstellen Ihnen ein Angebot für einen Wartungsvertrag oder eine einmalige DGUV-V3-Prüfung. Vollständige Dokumentation selbstverständlich inklusive."
       />
     </>
   )

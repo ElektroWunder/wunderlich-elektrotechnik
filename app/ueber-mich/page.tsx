@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Award, Clock, ShieldCheck, Users, CheckCircle } from 'lucide-react'
 import Hero from '@/components/Hero'
 import CTA from '@/components/CTA'
 
 export const metadata: Metadata = {
-  title: 'Über mich – Sebastian Wunderlich, Industriemeister Elektrotechnik',
+  title: 'Über uns – Sebastian Wunderlich, Industriemeister Elektrotechnik',
   description:
     'Lernen Sie Sebastian Wunderlich kennen: Industriemeister Elektrotechnik, Kältemittelschein Kategorie I, seit 2008 in der Elektro- und Kältetechnik. Meisterbetrieb in Witten.',
 }
@@ -23,25 +23,25 @@ const werte = [
     icon: Award,
     title: 'Qualität ohne Kompromisse',
     description:
-      'Ich installiere nur das, wovon ich selbst überzeugt bin – und übernehme nur Aufträge, die ich wirklich sauber ausführen kann.',
+      'Wir installieren nur das, wovon wir überzeugt sind – und übernehmen nur Aufträge, die wir wirklich sauber ausführen können.',
   },
   {
     icon: ShieldCheck,
     title: 'Transparenz',
     description:
-      'Sie bekommen ein schriftliches Angebot, bevor ich anfange. Was drinsteht, gilt. Ich erkläre Ihnen, was ich tue und warum.',
+      'Sie bekommen ein schriftliches Angebot, bevor wir anfangen. Was drinsteht, gilt. Wir erklären Ihnen, was wir tun und warum.',
   },
   {
     icon: Users,
     title: 'Verlässliches Team',
     description:
-      'Ich bin persönlich erreichbar und habe ein eingespieltes Team an meiner Seite. So können wir auch mehrere Aufträge parallel zuverlässig abwickeln.',
+      'Wir sind persönlich erreichbar und haben ein eingespieltes Team an unserer Seite. So können wir auch mehrere Aufträge parallel zuverlässig abwickeln.',
   },
   {
     icon: Clock,
     title: 'Termintreue',
     description:
-      'Ich erscheine zum vereinbarten Termin. Wenn etwas dazwischenkommt, sage ich rechtzeitig Bescheid.',
+      'Wir erscheinen zum vereinbarten Termin. Wenn etwas dazwischenkommt, sagen wir rechtzeitig Bescheid.',
   },
 ]
 
@@ -72,10 +72,10 @@ export default function UeberMichPage() {
 
             {/* Text */}
             <div className="prose-content">
-              <h2>Mein Werdegang</h2>
+              <h2>Unser Team</h2>
               <p>
-                Ich bin Sebastian Wunderlich – Industriemeister Elektrotechnik und Inhaber von
-                Wunderlich Elektrotechnik in Witten. Meine Wurzeln liegen in der Industrie:
+                Wir sind Sebastian Wunderlich – Industriemeister Elektrotechnik und Inhaber von
+                Wunderlich Elektrotechnik in Witten. Unsere Wurzeln liegen in der Industrie:
                 Von 2008 bis 2012 habe ich meine Ausbildung zum{' '}
                 <strong>Elektroniker für Betriebstechnik</strong> bei der{' '}
                 <strong>Deutschen Edelstahlwerke GmbH</strong> in Witten absolviert –
@@ -89,15 +89,15 @@ export default function UeberMichPage() {
                 weiß, wie Anlagen wirklich funktionieren – nicht nur auf dem Papier.
               </p>
               <p>
-                Seit 2026 führe ich meinen eigenen Betrieb. Mit einem starken Team an
-                meiner Seite bin ich für Privat- und Gewerbekunden in Witten und Umgebung
+                Seit 2026 führen wir unseren eigenen Betrieb. Mit einem starken Team an
+                unserer Seite sind wir für Privat- und Gewerbekunden in Witten und Umgebung
                 der verlässliche Ansprechpartner für Elektro- und Kältetechnik.
               </p>
 
               <h2>Servicegebiet</h2>
               <p>
-                Mein Schwerpunkt liegt in <strong>Witten und dem näheren Umkreis</strong>.
-                Bei Fragen zur Anfahrt sprechen Sie mich einfach kurz an.
+                Unser Schwerpunkt liegt in <strong>Witten und dem näheren Umkreis</strong>.
+                Bei Fragen zur Anfahrt sprechen Sie uns einfach kurz an.
               </p>
             </div>
           </div>
@@ -125,7 +125,7 @@ export default function UeberMichPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-primary text-center mb-12">
-            Meine Arbeitsweise
+            Unsere Arbeitsweise
           </h2>
           <div className="grid sm:grid-cols-2 gap-8">
             {werte.map((w) => {
@@ -148,7 +148,7 @@ export default function UeberMichPage() {
 
       <CTA
         headline="Sprechen wir über Ihr Projekt"
-        subtext="Kein anonymes Anfrageformular – ich bin direkt erreichbar und melde mich persönlich."
+        subtext="Kein anonymes Anfrageformular – wir sind direkt erreichbar und melden uns persönlich."
         primaryLabel="Kontakt aufnehmen"
       />
     </>

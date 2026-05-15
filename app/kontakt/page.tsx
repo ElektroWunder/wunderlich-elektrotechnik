@@ -19,7 +19,7 @@ export default function KontaktPage() {
             Kontakt aufnehmen
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-            Beschreiben Sie Ihr Vorhaben – ich melde mich innerhalb von 24 Stunden.
+            Beschreiben Sie Ihr Vorhaben – wir melden uns innerhalb von 24 Stunden.
             Vor-Ort-Besichtigung und schriftliches Angebot.
           </p>
         </div>
@@ -87,7 +87,7 @@ export default function KontaktPage() {
                     <p className="text-sm font-semibold text-gray-500 mb-1">Erreichbarkeit</p>
                     <p className="text-sm text-gray-600 leading-relaxed">
                       Terminvereinbarung per Telefon oder Kontaktformular.
-                      Ich melde mich in der Regel innerhalb von 24 Stunden.
+                      Wir melden uns in der Regel innerhalb von 24 Stunden.
                     </p>
                   </div>
                 </div>
@@ -97,8 +97,8 @@ export default function KontaktPage() {
                   <div>
                     <p className="font-semibold text-primary text-sm">Notfall</p>
                     <p className="text-gray-600 text-sm mt-0.5">
-                      Bei dringenden Elektroproblemen rufen Sie direkt an – ich melde
-                      mich schnellstmöglich zurück.
+                      Bei dringenden Elektroproblemen rufen Sie direkt an – wir melden
+                      uns schnellstmöglich zurück.
                     </p>
                   </div>
                 </div>
@@ -109,7 +109,7 @@ export default function KontaktPage() {
             <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
               <h2 className="text-lg font-bold text-primary mb-3">Servicegebiet</h2>
               <p className="text-sm text-gray-600 leading-relaxed">
-                Schwerpunkt Witten – der genaue Einsatzbereich richtet sich nach dem Auftrag. Sprechen Sie mich einfach an.
+                Schwerpunkt Witten – der genaue Einsatzbereich richtet sich nach dem Auftrag. Sprechen Sie uns einfach an.
               </p>
             </div>
 

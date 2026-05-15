@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { CheckCircle } from 'lucide-react'
 import Hero from '@/components/Hero'
 import CTA from '@/components/CTA'
@@ -26,7 +26,7 @@ const steps = [
     step: '01',
     title: 'Bedarfsanalyse',
     description:
-      'Ich bespreche mit Ihnen, was Sie benötigen: Wo kommen Steckdosen hin? Welche Verbraucher brauchen eigene Stromkreise? Ich erstelle einen Plan, den wir gemeinsam abstimmen.',
+      'Wir besprechen mit Ihnen, was Sie benötigen: Wo kommen Steckdosen hin? Welche Verbraucher brauchen eigene Stromkreise? Wir erstellen einen Plan, den wir gemeinsam abstimmen.',
   },
   {
     step: '02',
@@ -38,13 +38,13 @@ const steps = [
     step: '03',
     title: 'Schaltschrank und Absicherung',
     description:
-      'Ich baue den Schaltschrank strukturiert auf, beschrifte jeden Stromkreis klar und installiere alle notwendigen Schutzorgane – LS-Schalter, FI-Schutzschalter, Überspannungsschutz.',
+      'Wir bauen den Schaltschrank strukturiert auf, beschriften jeden Stromkreis klar und installieren alle notwendigen Schutzorgane – LS-Schalter, FI-Schutzschalter, Überspannungsschutz.',
   },
   {
     step: '04',
     title: 'Prüfung, Abnahme, Übergabe',
     description:
-      'Vor der Übergabe messe ich die fertige Anlage nach DIN VDE 0100-600. Das Prüfprotokoll erhalten Sie als Dokument – wichtig für Versicherungen und Weiterverkauf.',
+      'Vor der Übergabe messen wir die fertige Anlage nach DIN VDE 0100-600. Das Prüfprotokoll erhalten Sie als Dokument – wichtig für Versicherungen und Weiterverkauf.',
   },
 ]
 
@@ -52,22 +52,22 @@ const faqs = [
   {
     question: 'Wann muss ich die Elektroanlage sanieren?',
     answer:
-      'Anlagen, die älter als 30–40 Jahre sind, entsprechen oft nicht mehr dem aktuellen Stand der Technik. Typische Anzeichen: Schmelzsicherungen statt Leitungsschutzschaltern, kein FI-Schutzschalter, Zwei-Draht-Leitungen ohne Schutzleiter. Ich bewerte Ihre Anlage vor Ort und sage Ihnen, was sinnvoll ist.',
+      'Anlagen, die älter als 30–40 Jahre sind, entsprechen oft nicht mehr dem aktuellen Stand der Technik. Typische Anzeichen: Schmelzsicherungen statt Leitungsschutzschaltern, kein FI-Schutzschalter, Zwei-Draht-Leitungen ohne Schutzleiter. Wir bewerten Ihre Anlage vor Ort und sagen Ihnen, was sinnvoll ist.',
   },
   {
     question: 'Installieren Sie auch Smart-Home-Systeme?',
     answer:
-      'Einfache Funk-Lösungen (z. B. smarte Steckdosen, Funklichtschalter) kann ich bei Bedarf integrieren. Komplexe Bus-Systeme wie KNX sind nicht mein Schwerpunkt – dafür gibt es spezialisierte Betriebe.',
+      'Einfache Funk-Lösungen (z. B. smarte Steckdosen, Funklichtschalter) können wir bei Bedarf integrieren. Komplexe Bus-Systeme wie KNX sind nicht unser Schwerpunkt – dafür gibt es spezialisierte Betriebe.',
   },
   {
     question: 'Was kostet eine neue Elektroinstallation im Einfamilienhaus?',
     answer:
-      'Die Kosten hängen von der Wohnfläche, der Anzahl der Stromkreise und dem gewünschten Ausbaustandard ab. Ich erstelle nach einer Besichtigung ein genaues Angebot.',
+      'Die Kosten hängen von der Wohnfläche, der Anzahl der Stromkreise und dem gewünschten Ausbaustandard ab. Wir erstellen nach einer Besichtigung ein genaues Angebot.',
   },
   {
     question: 'Können Sie auch kleinere Elektroarbeiten übernehmen?',
     answer:
-      'Ja – das Nachrüsten einer Steckdose, das Verlegen eines Stromkreises für eine Wallbox, das Installieren einer Außenleuchte. Beschreiben Sie kurz, was Sie brauchen – ich melde mich schnell.',
+      'Ja – das Nachrüsten einer Steckdose, das Verlegen eines Stromkreises für eine Wallbox, das Installieren einer Außenleuchte. Beschreiben Sie kurz, was Sie brauchen – wir melden uns schnell.',
   },
 ]
 
@@ -87,28 +87,28 @@ export default function ElektroinstallationPage() {
           <h2>Normgerechte Elektroinstallation vom Meisterbetrieb</h2>
           <p>
             Elektroinstallation ist kein Bereich, in dem man Abstriche machen sollte. Eine fehlerhafte
-            Verdrahtung ist eine der häufigsten Ursachen für Wohnungsbrände. Ich installiere ausschließlich
-            nach den gültigen Normen – insbesondere der <strong>DIN VDE 0100</strong> – und dokumentiere
+            Verdrahtung ist eine der häufigsten Ursachen für Wohnungsbrände. Wir installieren ausschließlich
+            nach den gültigen Normen – insbesondere der <strong>DIN VDE 0100</strong> – und dokumentieren
             jede Anlage vollständig mit Schaltplänen und Messprotokoll.
           </p>
           <p>
-            Mit Erfahrung aus 13 Jahren Industrieumfeld kenne ich die Anforderungen an zuverlässige
-            Elektrotechnik. Ich plane und installiere mit dem nötigen Abstand zum Minimum –
+            Mit Erfahrung aus 13 Jahren Industrieumfeld kennen wir die Anforderungen an zuverlässige
+            Elektrotechnik. Wir planen und installieren mit dem nötigen Abstand zum Minimum –
             weil eine gut gemachte Elektroanlage Jahrzehnte halten soll.
           </p>
 
           <h2>Neuinstallation im Rohbau</h2>
           <p>
             Im Neubau planen wir gemeinsam, wie viele Stromkreise Sie wo benötigen, wo Steckdosen,
-            Schalter und Anschlüsse sitzen sollen. Ich koordiniere die Elektroarbeiten mit den anderen
-            Gewerken und übergebe eine vollständig geprüfte und dokumentierte Anlage.
+            Schalter und Anschlüsse sitzen sollen. Wir koordinieren die Elektroarbeiten mit den anderen
+            Gewerken und übergeben eine vollständig geprüfte und dokumentierte Anlage.
           </p>
 
           <h2>Sanierung älterer Elektroleitungen</h2>
           <p>
             In Gebäuden aus den 1960er bis 1980er Jahren sind häufig noch überalterte
             Sicherungskästen, Zweileiter-Systeme ohne Schutzleiter oder überlastete
-            Leitungsquerschnitte verbaut. Ich saniere behutsam – mit möglichst wenig Aufbruch
+            Leitungsquerschnitte verbaut. Wir sanieren behutsam – mit möglichst wenig Aufbruch
             und maximalem Ergebnis.
           </p>
         </div>
@@ -151,7 +151,7 @@ export default function ElektroinstallationPage() {
 
       <CTA
         headline="Elektroinstallation anfragen"
-        subtext="Ich besichtige vor Ort und erstelle ein schriftliches Angebot."
+        subtext="Wir besichtigen vor Ort und erstellen ein schriftliches Angebot."
       />
     </>
   )

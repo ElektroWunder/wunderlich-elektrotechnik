@@ -1,5 +1,4 @@
-﻿import Link from 'next/link'
-import { Mail, MapPin } from 'lucide-react'
+import Link from 'next/link'
 
 const leistungen = [
   { href: '/leistungen/klimaanlagen', label: 'Klimaanlagen' },
@@ -9,7 +8,6 @@ const leistungen = [
   { href: '/leistungen/wallbox', label: 'Wallbox & E-Laden' },
   { href: '/leistungen/wartung', label: 'Wartung & E-Check' },
 ]
-
 
 export default function Footer() {
   return (
@@ -30,23 +28,10 @@ export default function Footer() {
                 <span className="block text-[10px] text-accent-light font-semibold tracking-widest uppercase">Elektrotechnik</span>
               </div>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Klima, Kälte, Strom – aus einer Hand
-              Meisterbetrieb für Elektro- und Kältetechnik
-              im Ennepe-Ruhr-Kreis.
+            <p className="text-gray-400 text-sm leading-relaxed">
+              Klima, Kälte, Strom – aus einer Hand.
+              Meisterbetrieb für Elektro- und Kältetechnik aus Witten.
             </p>
-            <div className="space-y-2 text-sm text-gray-400">
-              <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-0.5 shrink-0 text-accent" />
-                <span>Casinostraße 2<br />58452 Witten</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 shrink-0 text-accent" />
-                <a href="mailto:sebastian.wunderlich@wunderlich-elektrotechnik.de" className="hover:text-white transition-colors break-all">
-                  sebastian.wunderlich@wunderlich-elektrotechnik.de
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Leistungen */}
@@ -68,17 +53,17 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Servicegebiet */}
+          {/* Einsatzgebiet */}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4">
               Einsatzgebiet
             </h3>
             <p className="text-sm text-gray-400 leading-relaxed">
-              Schwerpunkt Witten – der genaue Einsatzbereich richtet sich nach Auftrag. Sprechen Sie mich einfach an.
+              Schwerpunkt Witten – der genaue Einsatzbereich richtet sich nach Auftrag. Sprechen Sie uns einfach an.
             </p>
           </div>
 
-          {/* Links & Öffnungszeiten */}
+          {/* Erreichbarkeit & Rechtliches */}
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-4">
               Erreichbarkeit
@@ -91,10 +76,6 @@ export default function Footer() {
               <div className="flex justify-between gap-4">
                 <span>Rückruf</span>
                 <span>innerhalb 24 h</span>
-              </div>
-              <div className="flex justify-between gap-4">
-                <span>Notfall</span>
-                <span className="text-accent-light font-medium">Anruf genügt</span>
               </div>
             </div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-3">
@@ -118,15 +99,6 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-        </div>
-
-        <div className="mt-12 pt-8 border-t border-primary-light flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-gray-500">
-            © {new Date().getFullYear()} Wunderlich Elektrotechnik · Meisterbetrieb · HWK Dortmund
-          </p>
-          <p className="text-xs text-gray-600">
-            Industriemeister Elektrotechnik · Kältemittelschein Kategorie I · EU 517/2014
-          </p>
         </div>
       </div>
     </footer>

@@ -10,7 +10,7 @@ interface CTAProps {
 
 export default function CTA({
   headline = 'Bereit für Ihr Projekt?',
-  subtext = 'Ich berate Sie unverbindlich – per Kontaktformular oder E-Mail. Transparente Preise, keine versteckten Kosten.',
+  subtext = 'Wir beraten Sie unverbindlich – per Kontaktformular oder E-Mail. Transparente Preise, keine versteckten Kosten.',
   primaryLabel = 'Angebot anfordern',
   primaryHref = '/kontakt',
 }: CTAProps) {
