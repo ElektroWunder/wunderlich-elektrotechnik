@@ -57,7 +57,7 @@ export default function KlimaanlagenWittenPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-2 text-accent mb-6">
             <MapPin className="w-5 h-5" />
-            <span className="font-semibold">Lokaler Anbieter in Witten – Casinostraße 2, 58452 Witten</span>
+            <span className="font-semibold">Lokaler Anbieter in Witten – direkt vor Ort, kein Anfahrtzuschlag</span>
           </div>
 
           <div className="prose-content">

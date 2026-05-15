@@ -29,7 +29,7 @@ const faqs = [
   {
     question: 'Was ist der Lastabwurf nach §14a EnWG?',
     answer:
-      'Wärmepumpen ab einer bestimmten Leistung müssen nach §14a EnWG steuerbar sein – der Netzbetreiber darf die Leistung in Engpasssituationen kurzzeitig drosseln. Dafür ist ein geeignetes Schütz oder Lastabwurf-Relais erforderlich. Wir installieren das normgerecht und melde die Anlage beim Netzbetreiber an.',
+      'Wärmepumpen ab einer bestimmten Leistung müssen nach §14a EnWG steuerbar sein – der Netzbetreiber darf die Leistung in Engpasssituationen kurzzeitig drosseln. Dafür ist ein geeignetes Schütz oder Lastabwurf-Relais erforderlich. Wir installieren das normgerecht und melden die Anlage beim Netzbetreiber an.',
   },
   {
     question: 'Übernehmen Sie auch die Förderberatung (BAFA)?',
