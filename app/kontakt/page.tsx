@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from 'next'
-import { Phone, MapPin, Clock, AlertTriangle, ExternalLink } from 'lucide-react'
+import Link from 'next/link'
+import { Phone, MapPin, Clock, AlertTriangle, ExternalLink, Wand2 } from 'lucide-react'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
@@ -28,7 +29,16 @@ export default function KontaktPage() {
 
           {/* Kontaktformular */}
           <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
-            <h2 className="text-2xl font-bold text-primary mb-6">Anfrage senden</h2>
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-2xl font-bold text-primary">Anfrage senden</h2>
+              <Link
+                href="/anfrage"
+                className="inline-flex items-center gap-1.5 text-sm text-accent hover:text-accent-dark font-semibold transition-colors"
+              >
+                <Wand2 className="w-4 h-4" />
+                Schnell konfigurieren
+              </Link>
+            </div>
             <ContactForm />
           </div>
 

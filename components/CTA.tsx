@@ -6,6 +6,8 @@ interface CTAProps {
   subtext?: string
   primaryLabel?: string
   primaryHref?: string
+  secondaryLabel?: string
+  secondaryHref?: string
 }
 
 export default function CTA({
@@ -13,6 +15,8 @@ export default function CTA({
   subtext = 'Wir beraten Sie unverbindlich – per Kontaktformular oder E-Mail. Transparente Preise, keine versteckten Kosten.',
   primaryLabel = 'Angebot anfordern',
   primaryHref = '/kontakt',
+  secondaryLabel,
+  secondaryHref,
 }: CTAProps) {
   return (
     <section className="bg-primary py-20">
@@ -28,6 +32,15 @@ export default function CTA({
             {primaryLabel}
             <ArrowRight className="w-4 h-4" />
           </Link>
+          {secondaryLabel && secondaryHref && (
+            <Link
+              href={secondaryHref}
+              className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-lg font-bold text-base transition-all duration-200"
+            >
+              {secondaryLabel}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          )}
         </div>
       </div>
     </section>

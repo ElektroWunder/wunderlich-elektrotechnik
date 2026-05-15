@@ -216,6 +216,8 @@ export default function HomePage() {
         headline="Bereit für Ihr nächstes Projekt?"
         subtext="Wir erstellen Ihnen nach einer Vor-Ort-Besichtigung ein transparentes Angebot – ohne versteckte Kosten, ohne Überraschungen."
         primaryLabel="Angebot anfordern"
+        secondaryLabel="Schnell konfigurieren"
+        secondaryHref="/anfrage"
       />
 
     </>
