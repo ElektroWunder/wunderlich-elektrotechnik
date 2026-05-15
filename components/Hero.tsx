@@ -1,4 +1,3 @@
-﻿import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 
@@ -17,23 +16,16 @@ export default function Hero({
   headline,
   subheadline,
   imageUrl,
-  imageAlt,
   badge,
   primaryCta = { label: 'Angebot anfordern', href: '/kontakt' },
   secondaryCta,
   overlay = 'dark',
 }: HeroProps) {
   return (
-    <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-      {/* Background Image */}
-      <Image
-        src={imageUrl}
-        alt={imageAlt}
-        fill
-        className="object-cover object-center"
-        sizes="100vw"
-      />
-
+    <section
+      className="relative min-h-[85vh] flex items-center overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: `url(${imageUrl})` }}
+    >
       {/* Gradient Overlay */}
       <div
         className={`absolute inset-0 ${
