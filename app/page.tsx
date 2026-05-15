@@ -29,10 +29,10 @@ export const metadata: Metadata = {
       'Meisterbetrieb für Elektro- und Kältetechnik im Ennepe-Ruhr-Kreis. Klimaanlagen, Wärmepumpen, Photovoltaik, Wallbox.',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1200&q=80',
-        width: 1200,
-        height: 630,
-        alt: 'Wunderlich Elektrotechnik – Handwerker bei der Arbeit',
+        url: 'https://wunderlich-elektrotechnik.de/logo-text.png',
+        width: 601,
+        height: 599,
+        alt: 'Wunderlich Elektrotechnik – Klima, Kälte, Strom aus einer Hand',
       },
     ],
   },

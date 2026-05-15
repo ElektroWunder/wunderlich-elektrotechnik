@@ -57,7 +57,7 @@ const jsonLd = {
   description:
     'Meisterbetrieb für Elektroinstallation, Klimaanlagen, Wärmepumpen und Photovoltaik im Ennepe-Ruhr-Kreis.',
   url: 'https://wunderlich-elektrotechnik.de',
-  telephone: '+49XXXXXXXXXX',
+  telephone: '+4915207541151',
   priceRange: '€€',
   address: {
     '@type': 'PostalAddress',
