@@ -5,7 +5,7 @@ import ContactForm from '@/components/ContactForm'
 export const metadata: Metadata = {
   title: 'Kontakt – Beratung anfragen',
   description:
-    'Kontakt zu Wunderlich Elektrotechnik: Telefon +49 XXX XXXXXXXX, Witten. Beratung und Angebotserstellung für Witten und Umgebung.',
+    'Kontakt zu Wunderlich Elektrotechnik: Telefon 0152 07541151, Witten. Beratung und Angebotserstellung für Witten und Umgebung.',
 }
 
 export default function KontaktPage() {
@@ -46,10 +46,10 @@ export default function KontaktPage() {
                   <div>
                     <p className="text-sm font-semibold text-gray-500 mb-0.5">Telefon</p>
                     <a
-                      href="tel:+49XXXXXXXXXX"
+                      href="tel:+4915207541151"
                       className="text-primary font-bold text-lg hover:text-accent transition-colors"
                     >
-                      +49 XXX XXXXXXXX
+                      0152 07541151
                     </a>
                     <p className="text-xs text-gray-400 mt-0.5">
                       Erreichbarkeit nach Vereinbarung
