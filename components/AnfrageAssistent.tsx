@@ -81,41 +81,76 @@ const SERVICES: Service[] = [
           { id: 'einzelbuero', emoji: '🪑', label: 'Einzelbüro' },
           { id: 'grossraum',   emoji: '👥', label: 'Großraumbüro' },
           { id: 'server',      emoji: '🖥️', label: 'Serverraum / IT' },
-          { id: 'verkauf',     emoji: '🏪', label: 'Verkaufsraum / Gastraum' },
+          { id: 'mehrere',     emoji: '🏢', label: 'Mehrere Bereiche' },
         ],
         showIf: (a) => ['buero', 'gewerbe', 'gastro'].includes(a.nutzung),
       },
+      // Einzelraum: Raumgröße fragen
       {
         id: 'raumgroesse',
-        question: 'Wie groß ist der Raum (ca.)?',
-        hint: 'Bei mehreren Räumen: der größte Raum',
+        question: 'Wie groß ist der Raum?',
         options: [
           { id: 'bis20',   emoji: '📦', label: 'bis 20 m²',   hint: 'z. B. kleines Schlafzimmer' },
           { id: '20bis35', emoji: '🛋️', label: '20–35 m²',   hint: 'normales Wohnzimmer' },
           { id: '35bis50', emoji: '🏠', label: '35–50 m²',   hint: 'großes Zimmer' },
           { id: 'ueber50', emoji: '🏢', label: 'über 50 m²', hint: 'offene Fläche / Gewerbe' },
         ],
+        showIf: (a) =>
+          (a.bereich_privat !== undefined && a.bereich_privat !== 'mehrere') ||
+          (a.bereich_gewerbe !== undefined && a.bereich_gewerbe !== 'mehrere'),
       },
-      {
-        id: 'anzahl_raeume',
-        question: 'Wie viele Räume sollen klimatisiert werden?',
-        options: [
-          { id: '1',          emoji: '1️⃣', label: '1 Raum' },
-          { id: '2bis3',      emoji: '2️⃣', label: '2–3 Räume' },
-          { id: '4plus',      emoji: '4️⃣', label: '4 oder mehr' },
-          { id: 'weiss_nicht',emoji: '🤔', label: 'Noch unklar' },
-        ],
-      },
+      // Einzelraum: Stockwerk
       {
         id: 'stockwerk',
         question: 'In welchem Stockwerk befindet sich der Raum?',
         hint: 'Wichtig für die Leitungsführung zum Außengerät',
         options: [
-          { id: 'eg',     emoji: '🏠', label: 'Erdgeschoss' },
-          { id: 'og1',    emoji: '1️⃣', label: '1. Obergeschoss' },
-          { id: 'og2',    emoji: '⬆️', label: '2. OG oder höher' },
-          { id: 'dg',     emoji: '🏔️', label: 'Dachgeschoss' },
+          { id: 'eg',  emoji: '🏠', label: 'Erdgeschoss' },
+          { id: 'og1', emoji: '1️⃣', label: '1. Obergeschoss' },
+          { id: 'og2', emoji: '⬆️', label: '2. OG oder höher' },
+          { id: 'dg',  emoji: '🏔️', label: 'Dachgeschoss' },
         ],
+        showIf: (a) =>
+          (a.bereich_privat !== undefined && a.bereich_privat !== 'mehrere') ||
+          (a.bereich_gewerbe !== undefined && a.bereich_gewerbe !== 'mehrere'),
+      },
+      // Mehrere Räume: Anzahl
+      {
+        id: 'anzahl_raeume',
+        question: 'Wie viele Räume sollen klimatisiert werden?',
+        options: [
+          { id: '2',     emoji: '2️⃣', label: '2 Räume' },
+          { id: '3',     emoji: '3️⃣', label: '3 Räume' },
+          { id: '4plus', emoji: '4️⃣', label: '4 oder mehr' },
+          { id: 'unklar',emoji: '🤔', label: 'Noch unklar' },
+        ],
+        showIf: (a) => a.bereich_privat === 'mehrere' || a.bereich_gewerbe === 'mehrere',
+      },
+      // Mehrere Räume: größter Raum (für Leistungsauslegung)
+      {
+        id: 'groesster_raum',
+        question: 'Wie groß ist der größte Raum?',
+        hint: 'Bestimmt die Leistung des stärksten Innengeräts',
+        options: [
+          { id: 'bis20',   emoji: '📦', label: 'bis 20 m²' },
+          { id: '20bis35', emoji: '🛋️', label: '20–35 m²' },
+          { id: '35bis50', emoji: '🏠', label: '35–50 m²' },
+          { id: 'ueber50', emoji: '🏢', label: 'über 50 m²' },
+        ],
+        showIf: (a) => a.bereich_privat === 'mehrere' || a.bereich_gewerbe === 'mehrere',
+      },
+      // Mehrere Räume: Außengerät-Standort (statt Stockwerk)
+      {
+        id: 'aussengeraet',
+        question: 'Wo soll das Außengerät aufgestellt werden?',
+        hint: 'Bei Multisplit versorgt ein Außengerät alle Räume',
+        options: [
+          { id: 'wand',       emoji: '🏠', label: 'An der Hauswand' },
+          { id: 'dach',       emoji: '🏔️', label: 'Auf dem Dach / Flachdach' },
+          { id: 'garten',     emoji: '🌿', label: 'Im Garten / ebenerdig' },
+          { id: 'weiss_nicht',emoji: '🤔', label: 'Noch unklar' },
+        ],
+        showIf: (a) => a.bereich_privat === 'mehrere' || a.bereich_gewerbe === 'mehrere',
       },
       {
         id: 'gebaeude_alter',
