@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Farbthemas ──────────────────────────────────────────────────────────── */
+:root {
+  --accent:       29 110 200;   /* #1d6ec8 – Blau (Standard) */
+  --accent-light: 59 141 216;   /* #3b8dd8 */
+  --accent-dark:  21 88  168;   /* #1558a8 */
+}
+
+[data-theme="green"] {
+  --accent:       21 128 61;    /* #15803d – Grün */
+  --accent-light: 22 163 74;    /* #16a34a */
+  --accent-dark:  22 101 52;    /* #166534 */
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
@@ -56,9 +69,3 @@
   background: #94a3b8;
 }
 
-/* Sticky mobile padding – damit Footer nicht vom sticky CTA verdeckt wird */
-@media (max-width: 768px) {
-  main {
-    padding-bottom: 5rem;
-  }
-}
