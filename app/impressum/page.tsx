@@ -28,8 +28,8 @@ export default function ImpressumPage() {
           <section>
             <h2>Kontakt</h2>
             <p>
-              Telefon: <a href="tel:+49XXXXXXXXXX" className="text-accent">+49 XXX XXXXXXXX</a><br />
-              E-Mail: <span className="text-gray-500 italic">[E-Mail-Adresse wird nach Einrichtung ergänzt]</span>
+              Telefon: <a href="tel:+4915207541151" className="text-accent">0152 07541151</a><br />
+              E-Mail: <a href="mailto:sebastian.wunderlich@wunderlich-elektrotechnik.de" className="text-accent">sebastian.wunderlich@wunderlich-elektrotechnik.de</a>
             </p>
           </section>
 

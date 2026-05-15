@@ -99,6 +99,13 @@ export default function UeberMichPage() {
                 Unser Schwerpunkt liegt in <strong>Witten und dem näheren Umkreis</strong>.
                 Bei Fragen zur Anfahrt sprechen Sie uns einfach kurz an.
               </p>
+
+              <h2>Direktkontakt</h2>
+              <p>
+                <a href="mailto:sebastian.wunderlich@wunderlich-elektrotechnik.de" className="text-accent hover:underline">
+                  sebastian.wunderlich@wunderlich-elektrotechnik.de
+                </a>
+              </p>
             </div>
           </div>
         </div>
