@@ -443,7 +443,7 @@ export default function AnfrageAssistent() {
 
   function handleBack() {
     setQuestionErrors([])
-    setContactErrors([])
+    setContactErrors({})
     setSubmitError(null)
     if (step === 'questions') setStep('service')
     else if (step === 'contact') setStep('questions')

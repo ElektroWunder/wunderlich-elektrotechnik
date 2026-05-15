@@ -11,7 +11,6 @@ import {
   Clock,
   ShieldCheck,
   User,
-  CheckCircle,
   ArrowRight,
 } from 'lucide-react'
 import Hero from '@/components/Hero'
