@@ -49,20 +49,25 @@ export default function ContactForm() {
 
   const onSubmit = async (data: FormData) => {
     try {
-      const res = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT!, {
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
+          access_key: 'ee3e1d2d-cb9e-4c4d-a0c7-2c17578fdcd4',
+          from_name: data.name,
+          replyto: data.email,
+          subject: `Neue Anfrage: ${data.subject}`,
           name: data.name,
           email: data.email,
           phone: data.phone || '',
-          subject: data.subject,
-          message: data.message,
-          _gotcha: data.honeypot,
+          betreff: data.subject,
+          nachricht: data.message,
+          botcheck: data.honeypot,
         }),
       })
 
-      if (!res.ok) throw new Error('Fehler beim Senden')
+      const json = await res.json()
+      if (!json.success) throw new Error('Fehler beim Senden')
 
       setStatus('success')
       reset()
@@ -196,7 +201,7 @@ export default function ContactForm() {
           <div>
             <p className="font-semibold text-green-800">Anfrage erfolgreich gesendet!</p>
             <p className="text-sm text-green-700 mt-1">
-              Ich melde mich in der Regel innerhalb von 24 Stunden bei Ihnen.
+              Wir melden uns in der Regel innerhalb von 24 Stunden bei Ihnen.
             </p>
           </div>
         </div>
