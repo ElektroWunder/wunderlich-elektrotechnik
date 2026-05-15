@@ -33,9 +33,9 @@ const werte = [
   },
   {
     icon: Users,
-    title: 'Verlässliches Team',
+    title: 'Persönliche Betreuung',
     description:
-      'Wir sind persönlich erreichbar und haben ein eingespieltes Team an unserer Seite. So können wir auch mehrere Aufträge parallel zuverlässig abwickeln.',
+      'Jeder Auftrag wird persönlich betreut – von der ersten Anfrage bis zur Abnahme. Für größere Projekte arbeiten wir mit einem Netz zuverlässiger Fachleute zusammen.',
   },
   {
     icon: Clock,
@@ -72,26 +72,25 @@ export default function UeberMichPage() {
 
             {/* Text */}
             <div className="prose-content">
-              <h2>Unser Team</h2>
+              <h2>Sebastian Wunderlich</h2>
               <p>
-                Wir sind Sebastian Wunderlich – Industriemeister Elektrotechnik und Inhaber von
-                Wunderlich Elektrotechnik in Witten. Unsere Wurzeln liegen in der Industrie:
-                Von 2008 bis 2012 habe ich meine Ausbildung zum{' '}
-                <strong>Elektroniker für Betriebstechnik</strong> bei der{' '}
-                <strong>Deutschen Edelstahlwerke GmbH</strong> in Witten absolviert –
-                einem der modernsten Elektrostahlwerke Deutschlands. Anschließend habe ich
-                dort über viele Jahre in der Elektro- und Kältetechnik gearbeitet.
+                Inhaber und Gründer von Wunderlich Elektrotechnik. Die Ausbildung zum{' '}
+                <strong>Elektroniker für Betriebstechnik</strong> absolvierte Sebastian
+                Wunderlich von 2008 bis 2012 bei der{' '}
+                <strong>Deutschen Edelstahlwerke GmbH</strong> in Witten – einem der
+                modernsten Elektrostahlwerke Deutschlands. In den Jahren danach war er
+                dort in der Elektro- und Kältetechnik tätig.
               </p>
               <p>
-                Das Elektrostahlwerk ist eine anspruchsvolle Umgebung: Hochspannung,
-                komplexe Schaltanlagen, industrielle Kältemaschinen, ständiger
-                Betriebsdruck. Wer dort jahrelang Elektro- und Kältetechnik macht,
-                weiß, wie Anlagen wirklich funktionieren – nicht nur auf dem Papier.
+                Ein Stahlwerk ist kein einfaches Umfeld: Hochspannung, komplexe
+                Schaltanlagen, industrielle Kältemaschinen, hoher Betriebsdruck. Wer
+                dort über ein Jahrzehnt lang arbeitet, kennt den Unterschied zwischen
+                Theorie und Praxis – und weiß, worauf es bei sauber ausgeführter
+                Handwerksarbeit wirklich ankommt.
               </p>
               <p>
-                Seit 2026 führen wir unseren eigenen Betrieb. Mit einem starken Team an
-                unserer Seite sind wir für Privat- und Gewerbekunden in Witten und Umgebung
-                der verlässliche Ansprechpartner für Elektro- und Kältetechnik.
+                Seit 2026 ist Wunderlich Elektrotechnik als eigenständiger Meisterbetrieb
+                für Privat- und Gewerbekunden in Witten und Umgebung tätig.
               </p>
 
               <h2>Servicegebiet</h2>

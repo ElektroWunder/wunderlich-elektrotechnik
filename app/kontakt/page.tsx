@@ -95,9 +95,9 @@ export default function KontaktPage() {
                 <div className="flex items-start gap-4 p-4 bg-accent/5 rounded-xl border border-accent/20">
                   <AlertTriangle className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-semibold text-primary text-sm">Notfall</p>
+                    <p className="font-semibold text-primary text-sm">Dringend?</p>
                     <p className="text-gray-600 text-sm mt-0.5">
-                      Bei dringenden Elektroproblemen rufen Sie direkt an – wir melden
+                      Bei zeitkritischen Anliegen rufen Sie uns direkt an – wir melden
                       uns schnellstmöglich zurück.
                     </p>
                   </div>
