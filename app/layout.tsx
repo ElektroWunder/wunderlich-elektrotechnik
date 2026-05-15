@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import StickyMobileCTA from '@/components/StickyMobileCTA'
 import CookieBanner from '@/components/CookieBanner'
 
 const inter = Inter({
@@ -125,8 +124,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="pt-32 sm:pt-36">{children}</main>
         <Footer />
-        <StickyMobileCTA />
-        <CookieBanner />
+<CookieBanner />
       </body>
     </html>
   )
