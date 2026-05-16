@@ -185,8 +185,8 @@ export default function HomePage() {
               Warum Wunderlich Elektrotechnik?
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-              Wir sind kein Großbetrieb mit anonymen Strukturen. Wir sind der Fachmann, der
-              persönlich bei Ihnen erscheint – und für seine Arbeit geradestehe.
+              Kein Callcenter, kein Subunternehmer. Wer zu Ihnen kommt, macht auch die Arbeit –
+              und steht persönlich dafür gerade.
             </p>
           </div>
 

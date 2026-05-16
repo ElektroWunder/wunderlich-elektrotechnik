@@ -4,7 +4,6 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import CookieBanner from '@/components/CookieBanner'
-import ThemeSwitcher from '@/components/ThemeSwitcher'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -126,7 +125,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="pt-32 sm:pt-36">{children}</main>
         <Footer />
         <CookieBanner />
-        <ThemeSwitcher />
       </body>
     </html>
   )

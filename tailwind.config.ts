@@ -14,9 +14,9 @@ const config: Config = {
           dark: '#111827',
         },
         accent: {
-          DEFAULT: 'rgb(var(--accent) / <alpha-value>)',
-          light: 'rgb(var(--accent-light) / <alpha-value>)',
-          dark: 'rgb(var(--accent-dark) / <alpha-value>)',
+          DEFAULT: '#1d6ec8',
+          light: '#3b8dd8',
+          dark: '#1558a8',
         },
       },
       fontFamily: {
