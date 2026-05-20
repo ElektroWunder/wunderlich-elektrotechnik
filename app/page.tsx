@@ -141,7 +141,7 @@ export default function HomePage() {
         headline={
           'Klima, Kälte, Strom –\naus einer Hand'
         }
-        subheadline="Ihr Elektro- und Kältetechnikmeister aus Witten. 13+ Jahre Erfahrung, zertifiziert nach EU 517/2014."
+        subheadline="Ihr Elektromeister aus Witten – mit Kältemittelschein Kat. I. 13+ Jahre Erfahrung, zertifiziert nach EU 517/2014."
         imageUrl="https://images.unsplash.com/photo-1621905251918-48416bd8575a?w=1920&q=80"
         imageAlt="Elektriker bei der Arbeit – Wunderlich Elektrotechnik"
         badge="Meisterbetrieb · HWK Dortmund · Kältemittelzertifiziert"
