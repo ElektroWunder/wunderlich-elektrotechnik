@@ -1,5 +1,5 @@
 ﻿import type { Metadata } from 'next'
-import { Award, Clock, ShieldCheck, Users, CheckCircle } from 'lucide-react'
+import { CheckCircle } from 'lucide-react'
 import Hero from '@/components/Hero'
 import CTA from '@/components/CTA'
 
@@ -18,32 +18,6 @@ const qualifikationen = [
   'Seit 2008 in der Elektro- und Kältetechnik – davon über 12 Jahre im Industrieumfeld',
 ]
 
-const werte = [
-  {
-    icon: Award,
-    title: 'Qualität ohne Kompromisse',
-    description:
-      'Wir installieren nur das, wovon wir überzeugt sind – und übernehmen nur Aufträge, die wir wirklich sauber ausführen können.',
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Transparenz',
-    description:
-      'Sie bekommen ein schriftliches Angebot, bevor wir anfangen. Was drinsteht, gilt. Wir erklären Ihnen, was wir tun und warum.',
-  },
-  {
-    icon: Users,
-    title: 'Persönliche Betreuung',
-    description:
-      'Jeder Auftrag wird persönlich betreut – von der ersten Anfrage bis zur Abnahme. Für größere Projekte arbeiten wir mit einem Netz zuverlässiger Fachleute zusammen.',
-  },
-  {
-    icon: Clock,
-    title: 'Termintreue',
-    description:
-      'Wir erscheinen zum vereinbarten Termin. Wenn etwas dazwischenkommt, sagen wir rechtzeitig Bescheid.',
-  },
-]
 
 export default function UeberMichPage() {
   return (
@@ -123,31 +97,6 @@ export default function UeberMichPage() {
                 <span className="text-gray-700 text-sm font-medium">{q}</span>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Werte */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-primary text-center mb-12">
-            Unsere Arbeitsweise
-          </h2>
-          <div className="grid sm:grid-cols-2 gap-8">
-            {werte.map((w) => {
-              const Icon = w.icon
-              return (
-                <div key={w.title} className="flex gap-5">
-                  <div className="shrink-0 w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
-                    <Icon className="w-6 h-6 text-accent" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-primary mb-1">{w.title}</h3>
-                    <p className="text-gray-500 text-sm leading-relaxed">{w.description}</p>
-                  </div>
-                </div>
-              )
-            })}
           </div>
         </div>
       </section>

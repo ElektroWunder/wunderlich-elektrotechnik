@@ -1,8 +1,7 @@
-﻿import type { Metadata } from 'next'
+import type { Metadata } from 'next'
 import { CheckCircle } from 'lucide-react'
 import Hero from '@/components/Hero'
 import CTA from '@/components/CTA'
-import FAQ from '@/components/FAQ'
 
 export const metadata: Metadata = {
   title: 'Elektroinstallation – Neuinstallation & Sanierung | Witten',
@@ -11,64 +10,12 @@ export const metadata: Metadata = {
 }
 
 const included = [
-  'Planung und Beratung nach Ihren Anforderungen',
-  'Installation von Leitungen, Steckdosen, Schaltern, Leuchten',
-  'Schaltschrankbau und -montage',
-  'Unterverteilungen und Leitungsschutzschalter',
+  'Installation von Leitungen, Steckdosen und Schaltern',
+  'Schaltschrankbau und Unterverteilungen',
   'FI-Schutzschalter und Überspannungsschutz',
-  'Netzanschluss und Zähleranmeldung beim Netzbetreiber',
+  'Netzanschluss und Zähleranmeldung',
   'Prüfung nach DIN VDE 0100-600 mit Messprotokoll',
-  'Vollständige Dokumentation',
-]
-
-const steps = [
-  {
-    step: '01',
-    title: 'Bedarfsanalyse',
-    description:
-      'Wir besprechen mit Ihnen, was Sie benötigen: Wo kommen Steckdosen hin? Welche Verbraucher brauchen eigene Stromkreise? Wir erstellen einen Plan, den wir gemeinsam abstimmen.',
-  },
-  {
-    step: '02',
-    title: 'Leitungsverlegung und Installation',
-    description:
-      'Alle Leitungen werden nach VDE 0100 verlegt – in Schlitzen (Putzinstallation) oder auf Putz (Kabelkanäle). Schalter, Steckdosen und Verteiler werden sauber montiert.',
-  },
-  {
-    step: '03',
-    title: 'Schaltschrank und Absicherung',
-    description:
-      'Wir bauen den Schaltschrank strukturiert auf, beschriften jeden Stromkreis klar und installieren alle notwendigen Schutzorgane – LS-Schalter, FI-Schutzschalter, Überspannungsschutz.',
-  },
-  {
-    step: '04',
-    title: 'Prüfung, Abnahme, Übergabe',
-    description:
-      'Vor der Übergabe messen wir die fertige Anlage nach DIN VDE 0100-600. Das Prüfprotokoll erhalten Sie als Dokument – wichtig für Versicherungen und Weiterverkauf.',
-  },
-]
-
-const faqs = [
-  {
-    question: 'Wann muss ich die Elektroanlage sanieren?',
-    answer:
-      'Anlagen, die älter als 30–40 Jahre sind, entsprechen oft nicht mehr dem aktuellen Stand der Technik. Typische Anzeichen: Schmelzsicherungen statt Leitungsschutzschaltern, kein FI-Schutzschalter, Zwei-Draht-Leitungen ohne Schutzleiter. Wir bewerten Ihre Anlage vor Ort und sagen Ihnen, was sinnvoll ist.',
-  },
-  {
-    question: 'Installieren Sie auch Smart-Home-Systeme?',
-    answer:
-      'Einfache Funk-Lösungen (z. B. smarte Steckdosen, Funklichtschalter) können wir bei Bedarf integrieren. Komplexe Bus-Systeme wie KNX sind nicht unser Schwerpunkt – dafür gibt es spezialisierte Betriebe.',
-  },
-  {
-    question: 'Was kostet eine neue Elektroinstallation im Einfamilienhaus?',
-    answer:
-      'Die Kosten hängen von der Wohnfläche, der Anzahl der Stromkreise und dem gewünschten Ausbaustandard ab. Wir erstellen nach einer Besichtigung ein genaues Angebot.',
-  },
-  {
-    question: 'Können Sie auch kleinere Elektroarbeiten übernehmen?',
-    answer:
-      'Ja – das Nachrüsten einer Steckdose, das Verlegen eines Stromkreises für eine Wallbox, das Installieren einer Außenleuchte. Beschreiben Sie kurz, was Sie brauchen – wir melden uns schnell.',
-  },
+  'Vollständige Dokumentation und Schaltplan',
 ]
 
 export default function ElektroinstallationPage() {
@@ -83,43 +30,18 @@ export default function ElektroinstallationPage() {
       />
 
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 prose-content">
-          <h2>Normgerechte Elektroinstallation vom Meisterbetrieb</h2>
-          <p>
-            Elektroinstallation ist kein Bereich, in dem man Abstriche machen sollte. Eine fehlerhafte
-            Verdrahtung ist eine der häufigsten Ursachen für Wohnungsbrände. Wir installieren ausschließlich
-            nach den gültigen Normen – insbesondere der <strong>DIN VDE 0100</strong> – und dokumentieren
-            jede Anlage vollständig mit Schaltplänen und Messprotokoll.
-          </p>
-          <p>
-            Mit Erfahrung aus 13 Jahren Industrieumfeld kennen wir die Anforderungen an zuverlässige
-            Elektrotechnik. Wir planen und installieren mit dem nötigen Abstand zum Minimum –
-            weil eine gut gemachte Elektroanlage Jahrzehnte halten soll.
-          </p>
-
-          <h2>Neuinstallation im Rohbau</h2>
-          <p>
-            Im Neubau planen wir gemeinsam, wie viele Stromkreise Sie wo benötigen, wo Steckdosen,
-            Schalter und Anschlüsse sitzen sollen. Wir koordinieren die Elektroarbeiten mit den anderen
-            Gewerken und übergeben eine vollständig geprüfte und dokumentierte Anlage.
-          </p>
-
-          <h2>Sanierung älterer Elektroleitungen</h2>
-          <p>
-            In Gebäuden aus den 1960er bis 1980er Jahren sind häufig noch überalterte
-            Sicherungskästen, Zweileiter-Systeme ohne Schutzleiter oder überlastete
-            Leitungsquerschnitte verbaut. Wir sanieren behutsam – mit möglichst wenig Aufbruch
-            und maximalem Ergebnis.
-          </p>
-        </div>
-      </section>
-
-      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-primary mb-10 text-center">Was der Auftrag umfasst</h2>
-          <div className="grid sm:grid-cols-2 gap-4">
+          <div className="prose-content mb-12">
+            <p>
+              Wir installieren normgerecht nach <strong>DIN VDE 0100</strong> – vom Rohbau bis
+              zur Sanierung veralteter Anlagen. Jede Anlage wird vor der Übergabe gemessen und
+              mit vollständigem Schaltplan und Messprotokoll dokumentiert.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-3">
             {included.map((item) => (
-              <div key={item} className="flex items-start gap-3 bg-white p-4 rounded-xl border border-gray-100">
+              <div key={item} className="flex items-start gap-3 bg-gray-50 p-4 rounded-xl">
                 <CheckCircle className="w-5 h-5 text-accent shrink-0 mt-0.5" />
                 <span className="text-gray-700 text-sm">{item}</span>
               </div>
@@ -127,27 +49,6 @@ export default function ElektroinstallationPage() {
           </div>
         </div>
       </section>
-
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-primary mb-12 text-center">So läuft es ab</h2>
-          <div className="space-y-8">
-            {steps.map((s) => (
-              <div key={s.step} className="flex gap-6">
-                <div className="shrink-0 w-12 h-12 bg-accent rounded-xl flex items-center justify-center text-white font-bold text-sm">
-                  {s.step}
-                </div>
-                <div>
-                  <h3 className="font-bold text-primary text-lg mb-1">{s.title}</h3>
-                  <p className="text-gray-600 leading-relaxed">{s.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <FAQ items={faqs} title="Fragen zur Elektroinstallation" />
 
       <CTA
         headline="Elektroinstallation anfragen"
