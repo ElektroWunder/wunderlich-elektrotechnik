@@ -15,16 +15,21 @@ export default function LoginPage() {
     setError(null)
     setLoading(true)
 
-    const supabase = createClient()
-    const { error } = await supabase.auth.signInWithPassword({ email, password })
+    try {
+      const supabase = createClient()
+      const { error } = await supabase.auth.signInWithPassword({ email, password })
 
-    if (error) {
-      setError('E-Mail oder Passwort falsch.')
+      if (error) {
+        setError(`Fehler: ${error.message}`)
+        setLoading(false)
+        return
+      }
+
+      window.location.href = '/admin/dashboard'
+    } catch (err) {
+      setError(`Verbindungsfehler: ${err instanceof Error ? err.message : String(err)}`)
       setLoading(false)
-      return
     }
-
-    window.location.href = '/admin/dashboard'
   }
 
   return (
