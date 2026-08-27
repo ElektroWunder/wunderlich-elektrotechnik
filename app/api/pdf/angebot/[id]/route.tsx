@@ -120,7 +120,7 @@ function OfferPDF({ offer }: { offer: Offer }) {
   const FooterComp = () => (
     <View style={s.footer} fixed>
       <Text style={s.footerText}>
-        Wunderlich Elektrotechnik · Inhaber: Dominik Wunderlich · Elektromeister{'\n'}Steuernummer: 348/5226/3898 · USt-IdNr.: DE463092826
+        Wunderlich Elektrotechnik · Inhaber: Sebastian Wunderlich · Elektromeister{'\n'}Steuernummer: 348/5226/3898 · USt-IdNr.: DE463092826
       </Text>
       <Text style={{ fontSize: 6.5, color: C.gray, textAlign: 'right' }} render={({ pageNumber, totalPages }) => `Seite ${pageNumber} / ${totalPages}`} />
     </View>
@@ -136,7 +136,7 @@ function OfferPDF({ offer }: { offer: Offer }) {
             <Text style={s.logoSub}>ELEKTROTECHNIK</Text>
           </View>
           <Text style={s.companyInfo}>
-            Wunderlich Elektrotechnik{'\n'}Inhaber: Dominik Wunderlich{'\n'}Elektromeister mit Kälteanlagenschein{'\n'}www.wunderlich-elektrotechnik.de
+            Wunderlich Elektrotechnik{'\n'}Inhaber: Sebastian Wunderlich{'\n'}Elektromeister mit Kälteanlagenschein{'\n'}www.wunderlich-elektrotechnik.de
           </Text>
         </View>
 
@@ -218,7 +218,7 @@ function OfferPDF({ offer }: { offer: Offer }) {
         </View>
 
         <Text style={s.validityNote}>
-          Dieses Angebot gilt bis zum {fmtDate(offer.valid_until)}.{'\n'}Mit freundlichen Grüßen, Dominik Wunderlich – Wunderlich Elektrotechnik
+          Dieses Angebot gilt bis zum {fmtDate(offer.valid_until)}.{'\n'}Mit freundlichen Grüßen, Sebastian Wunderlich – Wunderlich Elektrotechnik
         </Text>
 
         <FooterComp />

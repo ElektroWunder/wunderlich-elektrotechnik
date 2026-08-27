@@ -176,7 +176,7 @@ export async function GET(req: NextRequest) {
           <Text style={s.legalText}>
             Dieses Prüfbuch ist gemäß Art. 6 EU-VO Nr. 517/2014 mindestens 5 Jahre aufzubewahren und den zuständigen Behörden auf Verlangen vorzulegen.
             Alle Einträge sind vom zertifizierten Kältemitteltechniker zu unterzeichnen. Bei Leckage: unverzügliche Reparatur und Nachkontrolle erforderlich.
-            Wunderlich Elektrotechnik · Dominik Wunderlich · Elektromeister mit Kälteanlagenschein · USt-IdNr.: DE463092826
+            Wunderlich Elektrotechnik · Sebastian Wunderlich · Elektromeister mit Kälteanlagenschein · USt-IdNr.: DE463092826
           </Text>
         </View>
 

@@ -101,7 +101,7 @@ function InvoicePDF({ invoice }: { invoice: Invoice }) {
   const FooterComp = () => (
     <View style={s.footer} fixed>
       <Text style={s.footerText}>
-        Wunderlich Elektrotechnik · Inhaber: Dominik Wunderlich · Elektromeister{'\n'}
+        Wunderlich Elektrotechnik · Inhaber: Sebastian Wunderlich · Elektromeister{'\n'}
         Steuernummer: 348/5226/3898 · USt-IdNr.: DE463092826 · IBAN: DE[IBAN] · BIC: [BIC]
       </Text>
       <Text
@@ -121,7 +121,7 @@ function InvoicePDF({ invoice }: { invoice: Invoice }) {
             <Text style={s.logoSub}>ELEKTROTECHNIK</Text>
           </View>
           <Text style={s.companyInfo}>
-            Wunderlich Elektrotechnik{'\n'}Inhaber: Dominik Wunderlich{'\n'}Elektromeister mit Kälteanlagenschein{'\n'}Steuernummer: 348/5226/3898{'\n'}USt-IdNr.: DE463092826
+            Wunderlich Elektrotechnik{'\n'}Inhaber: Sebastian Wunderlich{'\n'}Elektromeister mit Kälteanlagenschein{'\n'}Steuernummer: 348/5226/3898{'\n'}USt-IdNr.: DE463092826
           </Text>
         </View>
 
@@ -298,7 +298,7 @@ function InvoicePDF({ invoice }: { invoice: Invoice }) {
           <Text style={s.legalNoteText}>
             Bitte überweisen Sie {fmt(gross)} bis zum {fmtDate(invoice.due_date)} unter Angabe der Rechnungsnummer {invoice.invoice_number}.{'\n'}
             Zahlbar ohne Abzug innerhalb von 14 Tagen. Bei Zahlungsverzug werden Verzugszinsen gem. § 288 BGB berechnet.{'\n'}
-            Wunderlich Elektrotechnik · Dominik Wunderlich · Elektromeister · Steuernummer: 348/5226/3898 · USt-IdNr.: DE463092826 · Gerichtsstand: [Ort]
+            Wunderlich Elektrotechnik · Sebastian Wunderlich · Elektromeister · Steuernummer: 348/5226/3898 · USt-IdNr.: DE463092826 · Gerichtsstand: [Ort]
           </Text>
         </View>
 
