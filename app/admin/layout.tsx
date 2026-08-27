@@ -2,6 +2,11 @@ import { createClient } from '@/lib/supabase/server'
 import AdminSidebar from '@/components/admin/AdminSidebar'
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
+  // Env-Vars nicht verfügbar (Build-Zeit) → nur children rendern
+  if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
+    return <>{children}</>
+  }
+
   const supabase = await createClient()
 
   let user = null
