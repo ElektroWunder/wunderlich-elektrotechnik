@@ -70,12 +70,12 @@ export default function Footer() {
             </h3>
             <div className="text-sm text-gray-400 space-y-1 mb-6">
               <div className="flex justify-between gap-4">
-                <span>Termine</span>
+                <Link href="/anfrage" className="hover:text-white transition-colors">Termine</Link>
                 <span>nach Vereinbarung</span>
               </div>
               <div className="flex justify-between gap-4">
                 <span>Rückruf</span>
-                <span>innerhalb 24 h</span>
+                <Link href="/kontakt" className="hover:text-white transition-colors">innerhalb 24 h</Link>
               </div>
             </div>
             <h3 className="text-sm font-semibold uppercase tracking-wider text-gray-300 mb-3">

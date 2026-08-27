@@ -36,8 +36,8 @@ export default function ImpressumPage() {
           <section>
             <h2>Steuernummer / USt-IdNr.</h2>
             <p>
-              Steuernummer: <span className="text-gray-500 italic">[wird nach Erteilung eingesetzt]</span><br />
-              USt-IdNr.: <span className="text-gray-500 italic">[wird nach Erteilung eingesetzt]</span>
+              Steuernummer: 348/5226/3898<br />
+              USt-IdNr.: DE463092826
             </p>
           </section>
 
