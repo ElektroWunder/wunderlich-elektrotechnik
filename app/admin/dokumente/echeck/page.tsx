@@ -27,6 +27,8 @@ const defaultStromkreis = (): Stromkreis => ({
   ergebnis: 'i.O.',
 })
 
+export const dynamic = 'force-dynamic'
+
 export default function ECheckPage() {
   const [variant, setVariant] = useState<Variant>('klein')
   const [form, setForm] = useState({

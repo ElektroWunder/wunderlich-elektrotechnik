@@ -10,6 +10,8 @@ function startOfWeek(d: Date) {
   return new Date(d.setDate(diff))
 }
 
+export const dynamic = 'force-dynamic'
+
 export default async function ZeiterfassungPage({
   searchParams,
 }: {

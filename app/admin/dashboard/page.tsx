@@ -4,6 +4,8 @@ import Link from 'next/link'
 
 export const metadata = { title: 'Dashboard – Wunderlich Admin' }
 
+export const dynamic = 'force-dynamic'
+
 export default async function DashboardPage() {
   const supabase = await createClient()
 

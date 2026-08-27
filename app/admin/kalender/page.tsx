@@ -5,6 +5,8 @@ const embedUrl = CALENDAR_ID
   ? `https://calendar.google.com/calendar/embed?src=${encodeURIComponent(CALENDAR_ID)}&ctz=Europe%2FBerlin&hl=de&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&mode=WEEK`
   : ''
 
+export const dynamic = 'force-dynamic'
+
 export default function KalenderPage() {
   if (!CALENDAR_ID) {
     return (

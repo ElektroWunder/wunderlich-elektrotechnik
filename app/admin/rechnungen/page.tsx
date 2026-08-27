@@ -14,6 +14,8 @@ const STATUS_COLORS: Record<string, string> = {
   mahnung: 'bg-red-100 text-red-600',
 }
 
+export const dynamic = 'force-dynamic'
+
 export default async function RechnungenPage({
   searchParams,
 }: {

@@ -22,6 +22,8 @@ const docs = [
   },
 ]
 
+export const dynamic = 'force-dynamic'
+
 export default function DokumentePage() {
   return (
     <div className="p-8">

@@ -5,6 +5,8 @@ import { ArrowLeft } from 'lucide-react'
 
 export const metadata = { title: 'Rechnung erstellen – Wunderlich Admin' }
 
+export const dynamic = 'force-dynamic'
+
 export default async function NeuRechnungPage({
   searchParams,
 }: {

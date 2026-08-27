@@ -4,6 +4,8 @@ import { ArrowLeft } from 'lucide-react'
 
 export const metadata = { title: 'Material anlegen – Wunderlich Admin' }
 
+export const dynamic = 'force-dynamic'
+
 export default function NeuMaterialPage() {
   return (
     <div className="p-8 max-w-xl">

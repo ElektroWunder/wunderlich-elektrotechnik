@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { ArrowLeft, Phone, Mail, MapPin, Building, FileText, Plus, Pencil } from 'lucide-react'
 import DeleteCustomerButton from '@/components/admin/DeleteCustomerButton'
 
+export const dynamic = 'force-dynamic'
+
 export default async function KundeDetailPage({
   params,
 }: {

@@ -13,7 +13,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL ?? 'https://wunderlich-elektrotechnik.de'
+    process.env.NEXT_PUBLIC_SITE_URL || 'https://wunderlich-elektrotechnik.de'
   ),
   title: {
     default: 'Wunderlich Elektrotechnik – Klima, Kälte, Strom aus einer Hand | Witten',

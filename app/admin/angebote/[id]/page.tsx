@@ -28,6 +28,8 @@ function fmt(n: number | null | undefined) {
   return n.toFixed(2).replace('.', ',') + ' €'
 }
 
+export const dynamic = 'force-dynamic'
+
 export default async function AngebotsDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params
   const supabase = await createClient()

@@ -2,6 +2,8 @@ import CustomerForm from '@/components/admin/CustomerForm'
 
 export const metadata = { title: 'Neuer Kunde – Wunderlich Admin' }
 
+export const dynamic = 'force-dynamic'
+
 export default function NeuKundePage() {
   return (
     <div className="p-8 max-w-2xl">

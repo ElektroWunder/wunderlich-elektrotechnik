@@ -4,6 +4,8 @@ import { Plus, Search, User } from 'lucide-react'
 
 export const metadata = { title: 'Kunden – Wunderlich Admin' }
 
+export const dynamic = 'force-dynamic'
+
 export default async function KundenPage({
   searchParams,
 }: {

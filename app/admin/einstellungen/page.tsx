@@ -3,6 +3,8 @@ import SettingsForm from '@/components/admin/SettingsForm'
 
 export const metadata = { title: 'Einstellungen – Wunderlich Admin' }
 
+export const dynamic = 'force-dynamic'
+
 export default async function EinstellungenPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()

@@ -17,6 +17,8 @@ const TYPE_LABELS: Record<string, string> = {
   schaetzung: 'Schätzung', kva: 'Kostenvoranschlag', festpreis: 'Festpreis',
 }
 
+export const dynamic = 'force-dynamic'
+
 export default async function AngebotePage({
   searchParams,
 }: {

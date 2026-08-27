@@ -4,6 +4,8 @@ import { ArrowLeft } from 'lucide-react'
 
 export const metadata = { title: 'Materialien importieren – Wunderlich Admin' }
 
+export const dynamic = 'force-dynamic'
+
 export default function ImportPage() {
   return (
     <div className="p-8 max-w-2xl">

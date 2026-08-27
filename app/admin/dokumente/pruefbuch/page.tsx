@@ -9,6 +9,8 @@ interface Pruefung {
   leckagebefund: 'kein Befund' | 'Leckage' | 'Verdacht'; massnahmen: string
 }
 
+export const dynamic = 'force-dynamic'
+
 export default function PruefbuchPage() {
   const [anlagenDaten, setAnlagenDaten] = useState({
     betreiber: '', standort: '', anlagenTyp: '', fabrikat: '', baujahr: '',

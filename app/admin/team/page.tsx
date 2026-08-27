@@ -3,6 +3,8 @@ import { Users } from 'lucide-react'
 
 export const metadata = { title: 'Team – Wunderlich Admin' }
 
+export const dynamic = 'force-dynamic'
+
 export default async function TeamPage() {
   const supabase = await createClient()
   const { data: profiles } = await supabase.from('profiles').select('*').order('name')
