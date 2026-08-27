@@ -16,8 +16,17 @@ export default function LoginPage() {
     setLoading(true)
 
     try {
+      console.log('[Login] Supabase URL:', process.env.NEXT_PUBLIC_SUPABASE_URL)
       const supabase = createClient()
-      const { error } = await supabase.auth.signInWithPassword({ email, password })
+
+      const timeout = new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error('Zeitüberschreitung – Supabase nicht erreichbar (8s)')), 8000)
+      )
+
+      const { error } = await Promise.race([
+        supabase.auth.signInWithPassword({ email, password }),
+        timeout,
+      ])
 
       if (error) {
         setError(`Fehler: ${error.message}`)
