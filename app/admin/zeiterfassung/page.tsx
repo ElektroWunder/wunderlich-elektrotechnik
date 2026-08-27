@@ -26,7 +26,7 @@ export default async function ZeiterfassungPage({
   const vonDate = von ?? defaultVon
   const bisDate = bis ?? defaultBis
 
-  const { data: { user } } = await supabase.auth.getUser()
+  await supabase.auth.getUser()
 
   let query = supabase
     .from('time_entries')

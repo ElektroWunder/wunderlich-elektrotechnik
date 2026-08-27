@@ -1,12 +1,19 @@
-import { redirect } from 'next/navigation'
 import { createClient } from '@/lib/supabase/server'
 import AdminSidebar from '@/components/admin/AdminSidebar'
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
   const supabase = await createClient()
-  const { data: { user } } = await supabase.auth.getUser()
 
-  if (!user) redirect('/admin/login')
+  let user = null
+  try {
+    const { data } = await supabase.auth.getUser()
+    user = data.user
+  } catch { /* ignore */ }
+
+  // Kein User → nur children rendern (Middleware hat bereits redirectet oder es ist Login)
+  if (!user) {
+    return <>{children}</>
+  }
 
   const { data: profile } = await supabase
     .from('profiles')

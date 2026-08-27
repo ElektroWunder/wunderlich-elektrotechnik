@@ -10,7 +10,7 @@ interface Customer { id: string; name: string; company: string | null }
 interface Block { id: string; name: string; description: string | null; offer_block_items: BlockItem[] }
 interface BlockItem {
   id: string; type: string; description: string; quantity: number | null
-  unit: string | null; unit_price: number | null; labor_hours: number | null
+  unit: string | null; unit_price: number | null; labor_hours: number | null; position: number | null
 }
 interface OfferItem {
   id: string; type: 'material' | 'labor' | 'heading' | 'text'
@@ -62,7 +62,7 @@ export default function OfferWizard({ customers, blocks, preselectedCustomerId }
   }
   function addBlock(block: Block) {
     const blockItems: OfferItem[] = block.offer_block_items
-      .sort((a, b) => 0)
+      .sort((a, b) => (a.position ?? 0) - (b.position ?? 0))
       .map((bi) => ({
         id: crypto.randomUUID(),
         type: bi.type as OfferItem['type'],

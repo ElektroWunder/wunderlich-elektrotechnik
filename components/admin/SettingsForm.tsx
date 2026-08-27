@@ -55,7 +55,7 @@ export default function SettingsForm({ profile }: Props) {
       <div className="bg-white rounded-xl border border-gray-100 p-6">
         <h2 className="font-semibold text-primary mb-2">Google Kalender</h2>
         <p className="text-sm text-gray-500 mb-5">
-          Kalender-ID aus den Google Calendar Einstellungen (unter „Kalender freigeben").
+          Kalender-ID aus den Google Calendar Einstellungen (unter &bdquo;Kalender freigeben&ldquo;).
         </p>
         <div className="space-y-4">
           {field(
@@ -70,7 +70,7 @@ export default function SettingsForm({ profile }: Props) {
         </div>
         <div className="mt-4 p-4 bg-blue-50 border border-blue-100 rounded-lg text-sm text-blue-700">
           <strong>Einrichtung:</strong> Den Wert <code className="bg-blue-100 px-1 rounded">GOOGLE_CALENDAR_ID</code> in den Vercel-Umgebungsvariablen setzen.
-          Den Google-Kalender auf „Öffentlich" stellen damit das Einbetten funktioniert.
+          Den Google-Kalender auf &bdquo;Öffentlich&ldquo; stellen damit das Einbetten funktioniert.
         </div>
       </div>
 

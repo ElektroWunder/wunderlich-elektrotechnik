@@ -33,7 +33,6 @@ const navItems = [
   { href: '/admin/dokumente', label: 'Dokumente', icon: FileCheck },
 ]
 
-const futureItems: never[] = []
 
 interface Props {
   profile: Profile | null

@@ -101,7 +101,8 @@ export default function BlockEditor({
       await supabase.from('offer_block_items').delete().eq('block_id', blockId)
       await supabase.from('offer_blocks').update({ name: name.trim(), description: description.trim() || null }).eq('id', blockId)
       const dbItems = items.map((item, idx) => ({ ...item, block_id: blockId, position: idx }))
-      const { error } = await supabase.from('offer_block_items').insert(dbItems.map(({ id: _id, ...rest }) => rest))
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      const { error } = await supabase.from('offer_block_items').insert(dbItems.map(({ id: _, ...rest }) => rest))
       if (error) { setError(error.message); setLoading(false); return }
       router.push(`/admin/bausteine/${blockId}`)
     } else {
@@ -112,7 +113,8 @@ export default function BlockEditor({
         .single()
       if (blockErr) { setError(blockErr.message); setLoading(false); return }
       const dbItems = items.map((item, idx) => ({ ...item, block_id: block.id, position: idx }))
-      await supabase.from('offer_block_items').insert(dbItems.map(({ id: _id, ...rest }) => rest))
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      await supabase.from('offer_block_items').insert(dbItems.map(({ id: _, ...rest }) => rest))
       router.push(`/admin/bausteine/${block.id}`)
     }
     router.refresh()
