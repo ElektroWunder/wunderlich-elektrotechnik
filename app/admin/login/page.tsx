@@ -56,8 +56,9 @@ export default function LoginPage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
+                autoComplete="username"
                 className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white text-sm placeholder:text-gray-600 focus:outline-none focus:border-accent/50 transition-colors"
-                placeholder="sebastian@wunderlich-elektrotechnik.de"
+                placeholder="E-Mail-Adresse"
               />
             </div>
 

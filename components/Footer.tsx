@@ -97,6 +97,11 @@ export default function Footer() {
                   AGB
                 </Link>
               </li>
+              <li>
+                <Link href="/admin/login" className="text-xs text-gray-600 hover:text-gray-400 transition-colors">
+                  Mitarbeiter-Login
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
