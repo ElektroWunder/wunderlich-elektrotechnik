@@ -27,14 +27,13 @@ const navItems = [
   { href: '/admin/angebote', label: 'Angebote', icon: FileText },
   { href: '/admin/rechnungen', label: 'Rechnungen', icon: Receipt },
   { href: '/admin/bausteine', label: 'Bausteine', icon: Wrench },
+  { href: '/admin/zeiterfassung', label: 'Zeiterfassung', icon: Clock },
+  { href: '/admin/kalender', label: 'Kalender', icon: Calendar },
+  { href: '/admin/team', label: 'Team', icon: UserCog },
+  { href: '/admin/dokumente', label: 'Dokumente', icon: FileCheck },
 ]
 
-const futureItems = [
-  { href: '/admin/kalender', label: 'Kalender', icon: Calendar, phase: '2' },
-  { href: '/admin/team', label: 'Team', icon: UserCog, phase: '2' },
-  { href: '/admin/zeiterfassung', label: 'Zeiterfassung', icon: Clock, phase: '3' },
-  { href: '/admin/dokumente', label: 'Dokumente', icon: FileCheck, phase: '4' },
-]
+const futureItems: never[] = []
 
 interface Props {
   profile: Profile | null
@@ -88,22 +87,6 @@ export default function AdminSidebar({ profile }: Props) {
           )
         })}
 
-        <div className="pt-4 pb-1">
-          <p className="px-3 text-[10px] uppercase tracking-widest text-gray-600 mb-1">Geplant</p>
-        </div>
-
-        {futureItems.map(({ href, label, icon: Icon, phase }) => (
-          <div
-            key={href}
-            className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-gray-600 cursor-not-allowed"
-          >
-            <Icon className="w-4 h-4 shrink-0" />
-            {label}
-            <span className="ml-auto text-[9px] bg-white/5 text-gray-500 px-1.5 py-0.5 rounded">
-              Phase {phase}
-            </span>
-          </div>
-        ))}
       </nav>
 
       {/* User + Logout */}
